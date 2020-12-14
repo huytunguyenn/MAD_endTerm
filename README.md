@@ -1,13 +1,11 @@
-# MAD_endTerm
+# DriTest - Ứng dụng Học & Thi thử Bằng Lái xe
 
 *Mobile App Development - CSC13009*
-  
-  ***iOS Team***
----
+
 End of Term Project for CSC13009 course.
 
 
-## Thông tin nhóm
+## Thông tin nhóm: *iOS Team*
 
 | **Họ tên**             | **MSSV** 	|
 |-----------------------	|----------	|
