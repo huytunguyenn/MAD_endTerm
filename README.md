@@ -2,7 +2,7 @@
 
 *Mobile App Development - CSC13009*
 
-This is a Project for the end of term of CSC13009 course. This project implement a mobile iOS application that allows user to learn and take a driver test.
+This is a project for the end of term of CSC13009 course. This project implement a mobile iOS application that allows user to learn and take a driver test.
 
 
 ## Team Information: *iOS Team*
