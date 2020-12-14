@@ -5,7 +5,7 @@
 This is a Project for the end of term of CSC13009 course. This project implement a mobile iOS application that allows user to learn and take a driver test.
 
 
-## Team information: *iOS Team*
+## Team Information: *iOS Team*
 
 | **Full name**           | **Student ID** |
 |-----------------------	|----------------|
@@ -14,4 +14,4 @@ This is a Project for the end of term of CSC13009 course. This project implement
 | Nguyễn Huy Tú         	| 18120254 	     |
 
 
-## Thông tin đồ án
+## Project Information
