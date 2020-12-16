@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Yp3-05-We1">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,28 +12,117 @@
             <objects>
                 <viewController storyboardIdentifier="OnBoardingViewController" id="Yp3-05-We1" customClass="OnBoardingViewController" customModule="DrivTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6P9-1f-m5f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rBe-Zd-74j">
-                                <rect key="frame" x="159" y="20" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="LOI LOZ"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1N-V4-VSp">
+                                <rect key="frame" x="67" y="584" width="281" height="49"/>
+                                <color key="backgroundColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="JBc-Mt-E4b"/>
+                                    <constraint firstAttribute="width" constant="281" id="YQ7-ue-7NR"/>
+                                </constraints>
+                                <state key="normal" title="Tạo Tài khoản">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <action selector="getStartedButtonTapped:" destination="Yp3-05-We1" eventType="touchUpInside" id="880-gq-iy2"/>
+                                    <segue destination="f9E-P1-uDX" kind="presentation" modalPresentationStyle="fullScreen" id="67E-RV-Hgk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Z8-Ij-0mH">
+                                <rect key="frame" x="67" y="665" width="281" height="49"/>
+                                <color key="backgroundColor" red="0.91191709840000001" green="0.0" blue="0.19179626280000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="bcf-ih-wka"/>
+                                    <constraint firstAttribute="width" constant="281" id="u9s-kj-v9m"/>
+                                </constraints>
+                                <state key="normal" title="Tiếp tục không cần Đăng nhập">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pya-5H-Rm5" kind="presentation" modalPresentationStyle="fullScreen" id="qT0-fI-1jM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đã có Tài khoản? " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-tB-7fr">
+                                <rect key="frame" x="108" y="749" width="200" height="23"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="a9h-Fv-n9z"/>
+                                    <constraint firstAttribute="width" constant="200" id="rC0-hs-fLp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4q-Jj-CdW">
+                                <rect key="frame" x="228" y="745" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="avs-Yd-vHI"/>
+                                    <constraint firstAttribute="height" constant="30" id="m8S-SE-XlT"/>
+                                </constraints>
+                                <state key="normal" title="Đăng nhập"/>
+                                <connections>
+                                    <segue destination="SPQ-tx-xsI" kind="presentation" modalPresentationStyle="fullScreen" id="phS-mE-0uV"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-Aj-ZxB">
+                                <rect key="frame" x="40" y="256" width="334" height="270"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slogan" translatesAutoresizingMaskIntoConstraints="NO" id="hmn-A8-xci">
+                                <rect key="frame" x="84" y="125" width="246" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="246" id="ii7-4P-yI2"/>
+                                    <constraint firstAttribute="height" constant="96" id="lrc-Aa-lHy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-bl-imE">
+                                <rect key="frame" x="99" y="783" width="216" height="80"/>
+                                <color key="backgroundColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="216" id="9Dv-XA-UbF"/>
+                                    <constraint firstAttribute="height" constant="80" id="c4k-z2-dNB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f9E-P1-uDX" kind="presentation" modalPresentationStyle="fullScreen" id="JdU-Fn-cLp"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.81301178141711228" green="0.76297500561529663" blue="0.72451619902181685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="F2r-bl-imE" secondAttribute="bottom" constant="33" id="1z1-pR-7qM"/>
+                            <constraint firstItem="E1N-V4-VSp" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="67" id="54a-XK-EBx"/>
+                            <constraint firstItem="5Z8-Ij-0mH" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="67" id="5Vb-Zq-vR1"/>
+                            <constraint firstItem="1Rt-Aj-ZxB" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="40" id="B99-50-Fmg"/>
+                            <constraint firstItem="LtT-QC-Fgy" firstAttribute="bottom" secondItem="1Rt-Aj-ZxB" secondAttribute="bottom" constant="336" id="Cwa-5D-ycN"/>
+                            <constraint firstItem="LtT-QC-Fgy" firstAttribute="trailing" secondItem="hmn-A8-xci" secondAttribute="trailing" constant="84" id="DIj-Ms-sKF"/>
+                            <constraint firstItem="q4q-Jj-CdW" firstAttribute="top" secondItem="5Z8-Ij-0mH" secondAttribute="bottom" constant="31" id="JOu-ur-Xjf"/>
+                            <constraint firstItem="LtT-QC-Fgy" firstAttribute="trailing" secondItem="1Rt-Aj-ZxB" secondAttribute="trailing" constant="40" id="JZW-wV-KDE"/>
+                            <constraint firstItem="EWT-tB-7fr" firstAttribute="top" secondItem="5Z8-Ij-0mH" secondAttribute="bottom" constant="35" id="Kud-L9-du4"/>
+                            <constraint firstItem="E1N-V4-VSp" firstAttribute="top" secondItem="1Rt-Aj-ZxB" secondAttribute="bottom" constant="58" id="Mop-yO-VqW"/>
+                            <constraint firstItem="q4q-Jj-CdW" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="228" id="TDa-ee-R7K"/>
+                            <constraint firstItem="hmn-A8-xci" firstAttribute="top" secondItem="LtT-QC-Fgy" secondAttribute="top" constant="81" id="Uk2-lW-QhE"/>
+                            <constraint firstItem="EWT-tB-7fr" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="108" id="Unz-za-QYx"/>
+                            <constraint firstItem="F2r-bl-imE" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="99" id="Zry-67-lAp"/>
+                            <constraint firstItem="1Rt-Aj-ZxB" firstAttribute="top" secondItem="hmn-A8-xci" secondAttribute="bottom" constant="35" id="em0-71-joU"/>
+                            <constraint firstItem="5Z8-Ij-0mH" firstAttribute="top" secondItem="E1N-V4-VSp" secondAttribute="bottom" constant="32" id="fM6-Wo-0HU"/>
+                            <constraint firstItem="hmn-A8-xci" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="84" id="oVh-p0-IEl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LtT-QC-Fgy"/>
                     </view>
                     <connections>
-                        <outlet property="getStartedButton" destination="rBe-Zd-74j" id="nG0-id-ZDi"/>
+                        <outlet property="getStartedButton" destination="F2r-bl-imE" id="yI4-Qa-GvS"/>
+                        <outlet property="signInButton" destination="q4q-Jj-CdW" id="9cp-Jr-kO6"/>
+                        <outlet property="signInLabel" destination="EWT-tB-7fr" id="NU0-w0-mnz"/>
+                        <outlet property="signUpButton" destination="E1N-V4-VSp" id="3Id-Yl-wnP"/>
+                        <outlet property="skipButton" destination="5Z8-Ij-0mH" id="1vV-1R-Dwi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMV-Hd-yLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-801" y="-591"/>
+            <point key="canvasLocation" x="-802.89855072463774" y="-591.84782608695662"/>
         </scene>
         <!--SignIn-->
         <scene sceneID="YdH-le-CGv">
@@ -41,7 +130,30 @@
                 <viewControllerPlaceholder storyboardName="SignIn" id="SPQ-tx-xsI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1m-fe-CKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="-606"/>
+            <point key="canvasLocation" x="46" y="-768"/>
+        </scene>
+        <!--Tabbar-->
+        <scene sceneID="pCE-GW-9gP">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tabbar" id="pya-5H-Rm5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3th-f8-Tvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="-608"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="yPY-gH-XPN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="f9E-P1-uDX" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZjQ-o6-I1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="-428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login" width="1200" height="678"/>
+        <image name="slogan" width="1132" height="451"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="67E-RV-Hgk"/>
+    </inferredMetricsTieBreakers>
 </document>

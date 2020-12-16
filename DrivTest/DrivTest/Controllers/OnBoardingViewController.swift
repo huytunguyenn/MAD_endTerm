@@ -12,74 +12,120 @@ import paper_onboarding
 
 
 class OnBoardingViewController: UIViewController {
-
-
-   
+    
+    
+    // outlets
     @IBOutlet weak var getStartedButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var signInLabel: UILabel!
+    @IBOutlet weak var signInButton: UIButton!
+    
+    
+
+    // check first time onboarding
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
     fileprivate let items = [
         OnboardingItemInfo(informationImage: Asset.a.image,
-                           title: "Hotels",
-                           description: "All hotels and hostels are sorted by hospitality rating",
+                           title: "Học",
+                           description: "Học cho lòi lờ",
                            pageIcon: Asset.a.image,
                            color: UIColor(red: 0.40, green: 0.56, blue: 0.71, alpha: 1.00),
-                           titleColor: UIColor.white, descriptionColor: UIColor.white, titleFont: titleFont, descriptionFont: descriptionFont),
+                           titleColor: UIColor.white,
+                           descriptionColor: UIColor.white,
+                           titleFont: titleFont,
+                           descriptionFont: descriptionFont),
         
         OnboardingItemInfo(informationImage: Asset.a.image,
-                           title: "Banks",
-                           description: "We carefully verify all banks before add them into the app",
+                           title: "Thi thử",
+                           description: "Học tài thi rớt",
                            pageIcon: Asset.a.image,
                            color: UIColor(red: 0.40, green: 0.69, blue: 0.71, alpha: 1.00),
-                           titleColor: UIColor.white, descriptionColor: UIColor.white, titleFont: titleFont, descriptionFont: descriptionFont),
+                           titleColor: UIColor.white,
+                           descriptionColor: UIColor.white,
+                           titleFont: titleFont,
+                           descriptionFont: descriptionFont),
         
         OnboardingItemInfo(informationImage: Asset.a.image,
-                           title: "Stores",
-                           description: "All local stores are categorized for your convenience",
+                           title: "Cá nhân hoá",
+                           description: "Lòi lờ triến xĩ",
                            pageIcon: Asset.a.image,
                            color: UIColor(red: 0.61, green: 0.56, blue: 0.74, alpha: 1.00),
-                           titleColor: UIColor.white, descriptionColor: UIColor.white, titleFont: titleFont, descriptionFont: descriptionFont),
+                           titleColor: UIColor.white,
+                           descriptionColor: UIColor.white,
+                           titleFont: titleFont,
+                           descriptionFont: descriptionFont),
         
-        ]
+    ]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // hide default view
+        signUpButton.isHidden = true
+        skipButton.isHidden = true
+        signInLabel.isHidden = true
+        
+        
+        // setup 'Get Started' button
         getStartedButton.isHidden = true
+        getStartedButton.layer.cornerRadius = 20
+        getStartedButton.clipsToBounds = true
+        
+        if(appDelegate.hasAlreadyLaunched){
+            
+            signInLabel.isHidden = false
+            
+            // setup 'Create an Account' button
+            signUpButton.isHidden = false
+            signUpButton.layer.cornerRadius = 20
+            signUpButton.clipsToBounds = true
+            
+            // setup 'Continue without Sign In' button
+            skipButton.isHidden = false
+            skipButton.layer.cornerRadius = 20
+            skipButton.clipsToBounds = true
+            
+        }
 
-        setupPaperOnboardingView()
-
-        view.bringSubviewToFront(getStartedButton)
     }
-
     
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if(!appDelegate.hasAlreadyLaunched){
+            //set hasAlreadyLaunched to false
+            appDelegate.sethasAlreadyLaunched()
+            
+            //display for first time
+            setupPaperOnboardingView()
+            view.bringSubviewToFront(getStartedButton)
+        }
+    }
+    
+    
+    
+    // setup onboarding screen
     private func setupPaperOnboardingView() {
         let onboarding = PaperOnboarding()
         onboarding.delegate = self
         onboarding.dataSource = self
         onboarding.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(onboarding)
-
         // Add constraints
         for attribute: NSLayoutConstraint.Attribute in [.left, .right, .top, .bottom] {
-            let constraint = NSLayoutConstraint(item: onboarding,
-                                                attribute: attribute,
-                                                relatedBy: .equal,
-                                                toItem: view,
-                                                attribute: attribute,
-                                                multiplier: 1,
-                                                constant: 0)
+            let constraint = NSLayoutConstraint(item: onboarding, attribute: attribute, relatedBy: .equal, toItem: view, attribute: attribute, multiplier: 1, constant: 0)
             view.addConstraint(constraint)
         }
     }
     
     
     
-    @IBAction func getStartedButtonTapped(_ sender: Any) {
-        print("loi loz trien si")
-    }
     
-  
 }
 
 
@@ -87,11 +133,11 @@ class OnBoardingViewController: UIViewController {
 // MARK: PaperOnboardingDelegate
 
 extension OnBoardingViewController: PaperOnboardingDelegate {
-
+    
     func onboardingWillTransitonToIndex(_ index: Int) {
         getStartedButton.isHidden = index == 2 ? false : true
     }
-
+    
     func onboardingConfigurationItem(_ item: OnboardingContentViewItem, index: Int) {
         
         //item.titleCenterConstraint?.constant = 100
@@ -108,11 +154,11 @@ extension OnBoardingViewController: PaperOnboardingDelegate {
 // MARK: PaperOnboardingDataSource
 
 extension OnBoardingViewController: PaperOnboardingDataSource {
-
+    
     func onboardingItem(at index: Int) -> OnboardingItemInfo {
         return items[index]
     }
-
+    
     func onboardingItemsCount() -> Int {
         return 3
     }
@@ -135,4 +181,7 @@ private extension OnBoardingViewController {
     
     static let titleFont = UIFont(name: "Nunito-Bold", size: 36.0) ?? UIFont.boldSystemFont(ofSize: 36.0)
     static let descriptionFont = UIFont(name: "OpenSans-Regular", size: 14.0) ?? UIFont.systemFont(ofSize: 14.0)
+    
+    
 }
+
