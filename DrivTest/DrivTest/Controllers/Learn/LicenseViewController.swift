@@ -1,5 +1,5 @@
 //
-//  LearnViewController.swift
+//  LicenseViewController.swift
 //  DrivTest
 //
 //  Created by HUYTU on 12/18/20.
@@ -8,20 +8,20 @@
 
 import UIKit
 
-class LearnViewController: UIViewController {
+class LicenseViewController: UIViewController {
 
-    @IBOutlet weak var videoButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+       
     }
     
 
-    @IBAction func videoButtonTapped(_ sender: Any) {
-        print("loz")
+    @IBAction func backButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
-
 }

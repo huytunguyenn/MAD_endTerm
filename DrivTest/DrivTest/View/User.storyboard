@@ -14,6 +14,24 @@
                     <view key="view" contentMode="scaleToFill" id="LlT-Dq-yJU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzQ-bB-hrl">
+                                <rect key="frame" x="139" y="134" width="73" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dang nhap"/>
+                                <connections>
+                                    <segue destination="QIH-Mf-tIE" kind="presentation" modalPresentationStyle="fullScreen" id="2dp-ae-vMg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln9-8r-0eI">
+                                <rect key="frame" x="148" y="192" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dang ky"/>
+                                <connections>
+                                    <segue destination="5RD-ga-PH6" kind="presentation" modalPresentationStyle="fullScreen" id="P5C-BD-aRZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="pM0-3w-Icc"/>
                     </view>
@@ -25,6 +43,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lP9-Ek-JR6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-52" y="80"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="4a9-bD-kV8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="QIH-Mf-tIE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYw-Jn-u54" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="-122"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="RBP-vo-qDd">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="5RD-ga-PH6" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6YJ-qB-HmO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="-87"/>
         </scene>
     </scenes>
     <resources>

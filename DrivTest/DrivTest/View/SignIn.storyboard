@@ -15,12 +15,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ0-U5-6w5">
-                                <rect key="frame" x="157" y="301" width="47" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mL-bJ-WZb">
+                                <rect key="frame" x="216" y="193" width="73" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Sign In"/>
+                                <state key="normal" title="dang nhap"/>
                                 <connections>
-                                    <segue destination="Pas-p2-MxO" kind="presentation" modalPresentationStyle="fullScreen" id="cag-io-SNm"/>
+                                    <segue destination="Tp5-Y3-sG4" kind="presentation" modalPresentationStyle="fullScreen" id="1I4-cR-V0c"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -33,12 +33,12 @@
             <point key="canvasLocation" x="-105" y="100"/>
         </scene>
         <!--Tabbar-->
-        <scene sceneID="3gZ-Wi-AZF">
+        <scene sceneID="aud-DE-m8Y">
             <objects>
-                <viewControllerPlaceholder storyboardName="Tabbar" id="Pas-p2-MxO" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="20W-cG-NaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Tabbar" id="Tp5-Y3-sG4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nat-Zy-wbF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="588" y="99"/>
+            <point key="canvasLocation" x="513" y="-22"/>
         </scene>
     </scenes>
 </document>
