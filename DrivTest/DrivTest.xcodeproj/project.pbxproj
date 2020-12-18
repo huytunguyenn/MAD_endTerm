@@ -17,6 +17,7 @@
 		2D7E0E7D2588AA1E00A92ABD /* Tabbar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D7E0E7C2588AA1E00A92ABD /* Tabbar.storyboard */; };
 		2D7E0E812588B62200A92ABD /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E0E802588B62200A92ABD /* OnBoardingViewController.swift */; };
 		2D7E0E852588BBA600A92ABD /* OnBoarding_Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D7E0E842588BBA600A92ABD /* OnBoarding_Images.swift */; };
+		2D92653C258CB54D004C091F /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D92653B258CB54D004C091F /* LearnViewController.swift */; };
 		2DBF2853258A18BC009F26EE /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF2852258A18BC009F26EE /* SignUp.storyboard */; };
 		2DBF2855258A1918009F26EE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF2854258A1918009F26EE /* SignUpViewController.swift */; };
 		2DBF2859258A1EFA009F26EE /* RoundedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF2858258A1EFA009F26EE /* RoundedTabBarController.swift */; };
@@ -41,6 +42,7 @@
 		2D7E0E7C2588AA1E00A92ABD /* Tabbar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tabbar.storyboard; sourceTree = "<group>"; };
 		2D7E0E802588B62200A92ABD /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		2D7E0E842588BBA600A92ABD /* OnBoarding_Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding_Images.swift; sourceTree = "<group>"; };
+		2D92653B258CB54D004C091F /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		2DBF2852258A18BC009F26EE /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		2DBF2854258A1918009F26EE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2DBF2858258A1EFA009F26EE /* RoundedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTabBarController.swift; sourceTree = "<group>"; };
@@ -100,11 +102,11 @@
 			isa = PBXGroup;
 			children = (
 				2D0BC59C258837A9000E5504 /* LaunchScreen.storyboard */,
-				2DE363BE25887F4400FCB8E5 /* User.storyboard */,
+				2D0BC597258837A3000E5504 /* Main.storyboard */,
+				2D0BC5B02588740F000E5504 /* Learn.storyboard */,
 				2DE363BC25887F2200FCB8E5 /* Exam.storyboard */,
 				2DE363BA25887F0B00FCB8E5 /* Catagories.storyboard */,
-				2D0BC5B02588740F000E5504 /* Learn.storyboard */,
-				2D0BC597258837A3000E5504 /* Main.storyboard */,
+				2DE363BE25887F4400FCB8E5 /* User.storyboard */,
 				2DE363C52588916400FCB8E5 /* SignIn.storyboard */,
 				2D7E0E7C2588AA1E00A92ABD /* Tabbar.storyboard */,
 				2DBF2852258A18BC009F26EE /* SignUp.storyboard */,
@@ -119,6 +121,7 @@
 				2D7E0E802588B62200A92ABD /* OnBoardingViewController.swift */,
 				2DBF2854258A1918009F26EE /* SignUpViewController.swift */,
 				2DBF2858258A1EFA009F26EE /* RoundedTabBarController.swift */,
+				2D92653B258CB54D004C091F /* LearnViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				2D0BC594258837A3000E5504 /* SceneDelegate.swift in Sources */,
 				2D7E0E852588BBA600A92ABD /* OnBoarding_Images.swift in Sources */,
 				2D7E0E7B2588A8D300A92ABD /* SignInViewController.swift in Sources */,
+				2D92653C258CB54D004C091F /* LearnViewController.swift in Sources */,
 				2D7E0E812588B62200A92ABD /* OnBoardingViewController.swift in Sources */,
 				2DBF2859258A1EFA009F26EE /* RoundedTabBarController.swift in Sources */,
 			);

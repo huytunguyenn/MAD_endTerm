@@ -39,7 +39,8 @@ class RoundedTabBarController: UITabBarController {
 //            }
 //        }
         
-        self.tabBar.itemWidth = 25.0
+        // spacing between items
+        self.tabBar.itemWidth = 50.0
         self.tabBar.itemPositioning = .centered
 
         // delete top borderline

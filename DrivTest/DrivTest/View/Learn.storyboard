@@ -14,21 +14,81 @@
                     <view key="view" contentMode="scaleToFill" id="HBA-TZ-ueW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Hocbai" translatesAutoresizingMaskIntoConstraints="NO" id="jld-Pe-tgx">
+                                <rect key="frame" x="0.0" y="44" width="414" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="klt-hB-cri"/>
+                                    <constraint firstAttribute="width" constant="414" id="m5W-MM-pl6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chonloaibang" translatesAutoresizingMaskIntoConstraints="NO" id="D26-oG-hv7">
+                                <rect key="frame" x="49" y="321" width="184" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="184" id="GXJ-jE-zK3"/>
+                                    <constraint firstAttribute="height" constant="54" id="Guh-kh-tNi"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xemvideo" translatesAutoresizingMaskIntoConstraints="NO" id="QZd-Qb-mid">
+                                <rect key="frame" x="49" y="553" width="227" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="YzS-tw-jnQ"/>
+                                    <constraint firstAttribute="width" constant="227" id="fSZ-nN-6lk"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxD-aT-0oa">
+                                <rect key="frame" x="52" y="617" width="311" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="99H-eo-JvI"/>
+                                    <constraint firstAttribute="height" constant="169" id="rcL-jc-RTF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="videoButtonTapped:" destination="YH6-jP-h1p" eventType="touchUpInside" id="j6B-GH-IgO"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="igy-2K-ehG">
+                                <rect key="frame" x="52" y="617" width="311" height="169"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="311" id="nJ7-b6-Lo0"/>
+                                    <constraint firstAttribute="height" constant="169" id="tIy-DC-g7Z"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QZd-Qb-mid" firstAttribute="leading" secondItem="9XO-Af-Mnl" secondAttribute="leading" constant="49" id="GZh-nu-i3e"/>
+                            <constraint firstItem="jld-Pe-tgx" firstAttribute="top" secondItem="9XO-Af-Mnl" secondAttribute="top" id="LXQ-wc-HYK"/>
+                            <constraint firstItem="9XO-Af-Mnl" firstAttribute="bottom" secondItem="igy-2K-ehG" secondAttribute="bottom" constant="27" id="WgU-GY-e9p"/>
+                            <constraint firstItem="9XO-Af-Mnl" firstAttribute="bottom" secondItem="yxD-aT-0oa" secondAttribute="bottom" constant="27" id="bVi-O5-Eu8"/>
+                            <constraint firstItem="jld-Pe-tgx" firstAttribute="trailing" secondItem="9XO-Af-Mnl" secondAttribute="trailing" id="dk3-M5-dOa"/>
+                            <constraint firstItem="igy-2K-ehG" firstAttribute="top" secondItem="QZd-Qb-mid" secondAttribute="bottom" constant="18" id="ir5-Xs-WAq"/>
+                            <constraint firstItem="D26-oG-hv7" firstAttribute="top" secondItem="jld-Pe-tgx" secondAttribute="bottom" constant="24" id="jmt-xg-Eq7"/>
+                            <constraint firstItem="D26-oG-hv7" firstAttribute="leading" secondItem="9XO-Af-Mnl" secondAttribute="leading" constant="49" id="ksD-Qj-pde"/>
+                            <constraint firstItem="igy-2K-ehG" firstAttribute="leading" secondItem="9XO-Af-Mnl" secondAttribute="leading" constant="52" id="mRg-78-IAC"/>
+                            <constraint firstItem="jld-Pe-tgx" firstAttribute="leading" secondItem="9XO-Af-Mnl" secondAttribute="leading" id="vkA-hy-fVv"/>
+                            <constraint firstItem="yxD-aT-0oa" firstAttribute="leading" secondItem="9XO-Af-Mnl" secondAttribute="leading" constant="52" id="wci-BF-OGo"/>
+                            <constraint firstItem="9XO-Af-Mnl" firstAttribute="trailing" secondItem="igy-2K-ehG" secondAttribute="trailing" constant="51" id="zmM-Fa-EjP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9XO-Af-Mnl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="learn_inline" selectedImage="icons8-bookmark-30" id="V6h-Bs-MAs">
+                    <tabBarItem key="tabBarItem" title="" image="book-24" selectedImage="book-24" id="V6h-Bs-MAs">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-17"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="videoButton" destination="yxD-aT-0oa" id="pOI-48-xSG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fmg-Rn-2B0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-599" y="252"/>
+            <point key="canvasLocation" x="-600" y="251.78571428571428"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-bookmark-30" width="30" height="30"/>
-        <image name="learn_inline" width="25" height="25"/>
+        <image name="Hocbai" width="1121" height="663"/>
+        <image name="book-24" width="32" height="32"/>
+        <image name="chonloaibang" width="500" height="150"/>
+        <image name="video" width="1500" height="823"/>
+        <image name="xemvideo" width="620" height="128"/>
     </resources>
 </document>

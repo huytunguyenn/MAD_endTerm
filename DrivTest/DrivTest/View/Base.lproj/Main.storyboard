@@ -75,15 +75,14 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2r-bl-imE">
-                                <rect key="frame" x="99" y="783" width="216" height="80"/>
-                                <color key="backgroundColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="241" y="49" width="153" height="61"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="216" id="9Dv-XA-UbF"/>
-                                    <constraint firstAttribute="height" constant="80" id="c4k-z2-dNB"/>
+                                    <constraint firstAttribute="width" constant="153" id="FyA-Zl-rfb"/>
+                                    <constraint firstAttribute="height" constant="61" id="PLD-6p-z5E"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="19"/>
-                                <state key="normal" title="Get Started">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="16"/>
+                                <state key="normal" title="Bắt Đầu Nào &gt;">
+                                    <color key="titleColor" red="0.75697266320000001" green="0.1207412455" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="f9E-P1-uDX" kind="presentation" modalPresentationStyle="fullScreen" id="JdU-Fn-cLp"/>
@@ -92,7 +91,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.81301178141711228" green="0.76297500561529663" blue="0.72451619902181685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="F2r-bl-imE" secondAttribute="bottom" constant="33" id="1z1-pR-7qM"/>
+                            <constraint firstItem="F2r-bl-imE" firstAttribute="top" secondItem="LtT-QC-Fgy" secondAttribute="top" constant="5" id="07Q-4G-Zfx"/>
                             <constraint firstItem="E1N-V4-VSp" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="67" id="54a-XK-EBx"/>
                             <constraint firstItem="5Z8-Ij-0mH" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="67" id="5Vb-Zq-vR1"/>
                             <constraint firstItem="1Rt-Aj-ZxB" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="40" id="B99-50-Fmg"/>
@@ -105,10 +104,10 @@
                             <constraint firstItem="q4q-Jj-CdW" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="228" id="TDa-ee-R7K"/>
                             <constraint firstItem="hmn-A8-xci" firstAttribute="top" secondItem="LtT-QC-Fgy" secondAttribute="top" constant="81" id="Uk2-lW-QhE"/>
                             <constraint firstItem="EWT-tB-7fr" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="108" id="Unz-za-QYx"/>
-                            <constraint firstItem="F2r-bl-imE" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="99" id="Zry-67-lAp"/>
                             <constraint firstItem="1Rt-Aj-ZxB" firstAttribute="top" secondItem="hmn-A8-xci" secondAttribute="bottom" constant="35" id="em0-71-joU"/>
                             <constraint firstItem="5Z8-Ij-0mH" firstAttribute="top" secondItem="E1N-V4-VSp" secondAttribute="bottom" constant="32" id="fM6-Wo-0HU"/>
                             <constraint firstItem="hmn-A8-xci" firstAttribute="leading" secondItem="LtT-QC-Fgy" secondAttribute="leading" constant="84" id="oVh-p0-IEl"/>
+                            <constraint firstItem="LtT-QC-Fgy" firstAttribute="trailing" secondItem="F2r-bl-imE" secondAttribute="trailing" constant="20" id="w4D-aR-JL0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LtT-QC-Fgy"/>
                     </view>
@@ -122,7 +121,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zMV-Hd-yLc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-802.89855072463774" y="-591.84782608695662"/>
+            <point key="canvasLocation" x="-802.89855072463774" y="-591.96428571428567"/>
         </scene>
         <!--SignIn-->
         <scene sceneID="YdH-le-CGv">
