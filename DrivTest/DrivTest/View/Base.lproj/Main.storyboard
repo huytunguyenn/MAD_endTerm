@@ -129,7 +129,7 @@
                 <viewControllerPlaceholder storyboardName="SignIn" id="SPQ-tx-xsI" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1m-fe-CKT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46" y="-768"/>
+            <point key="canvasLocation" x="162" y="-764"/>
         </scene>
         <!--Tabbar-->
         <scene sceneID="pCE-GW-9gP">
@@ -137,7 +137,7 @@
                 <viewControllerPlaceholder storyboardName="Tabbar" id="pya-5H-Rm5" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3th-f8-Tvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51" y="-608"/>
+            <point key="canvasLocation" x="145" y="-592"/>
         </scene>
         <!--SignUp-->
         <scene sceneID="yPY-gH-XPN">
@@ -145,7 +145,7 @@
                 <viewControllerPlaceholder storyboardName="SignUp" id="f9E-P1-uDX" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZjQ-o6-I1g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="49" y="-428"/>
+            <point key="canvasLocation" x="143" y="-431"/>
         </scene>
     </scenes>
     <resources>
