@@ -27,12 +27,14 @@ class LearnViewController: UIViewController {
     @IBOutlet weak var videoImageView: UIImageView!
     
     
-    // data for collection view
+    // images for collection view
     var listCatData = [
-        catData(_imageName: "video"),
-        catData(_imageName: "video"),
-        catData(_imageName: "video"),
-        catData(_imageName: "video")
+        catData(_imageName: "pic_a1"),
+        catData(_imageName: "pic_a2"),
+        catData(_imageName: "pic_b1"), 
+        catData(_imageName: "pic_b2"),
+        catData(_imageName: "pic_c"),
+        catData(_imageName: "pic_f")
     ]
     // layout for collection view
     var layout = UICollectionViewLayout()
@@ -86,9 +88,10 @@ extension LearnViewController : UICollectionViewDelegate, UICollectionViewDataSo
         cell.layer.cornerRadius = 12
         return cell
     }
-    
+    // click on license image
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dest = storyboard?.instantiateViewController(identifier: "LicenseViewController") as! LicenseViewController
+        dest.type = indexPath.row;
         dest.modalPresentationStyle = .fullScreen
         self.present(dest, animated: true, completion: nil)
     }
