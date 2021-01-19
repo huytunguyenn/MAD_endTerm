@@ -25,7 +25,8 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var dButton: UIButton!
     
     // init list of questions
-    let allQuestions = QuestionBank()
+    lazy var allQuestions = QuestionBank(type: type,subtype: subtype)
+
     // count variables
     var questionNumber:Int = 0
     var score:Int = 0
@@ -37,12 +38,20 @@ class QuizViewController: UIViewController {
         // center text in answer button
         aButton.titleLabel!.textAlignment = .center
         aButton.titleLabel!.numberOfLines = 0
+        aButton.layer.cornerRadius = 20
+        aButton.clipsToBounds = true
         bButton.titleLabel!.textAlignment = .center
         bButton.titleLabel!.numberOfLines = 0
+        bButton.layer.cornerRadius = 20
+        bButton.clipsToBounds = true
         cButton.titleLabel!.textAlignment = .center
         cButton.titleLabel!.numberOfLines = 0
+        cButton.layer.cornerRadius = 20
+        cButton.clipsToBounds = true
         dButton.titleLabel!.textAlignment = .center
         dButton.titleLabel!.numberOfLines = 0
+        dButton.layer.cornerRadius = 20
+        dButton.clipsToBounds = true
         
         updateQuestion()
         updateUI()
@@ -54,10 +63,8 @@ class QuizViewController: UIViewController {
     @IBAction func answerPressed(_ sender: UIButton) {
         if sender.tag == selectedAnswer { // corrected answer
             score += 1
-            print("correct")
-            
         }else { // wrong answer
-            print("wrong")
+            print("Dap an dung: \(selectedAnswer)")
         }
         
         // move to next question
@@ -94,7 +101,7 @@ class QuizViewController: UIViewController {
     
     // update progress view, question counter, score
     func updateUI(){
-        scoreLabel.text = "Score: \(score)"
+        scoreLabel.text = "Số câu đúng: \(score)"
         questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
         progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
     }
