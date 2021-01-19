@@ -19,14 +19,16 @@ class MainExamViewController: UIViewController {
     @IBOutlet var B2_Btn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        customizeView()
 
         // Do any additional setup after loading the view.
     }
     
     @IBAction func A1_Btn_Click(_ sender: Any) {
-        var sb = UIStoryboard(name: "Exam", bundle: nil)
+        let sb = UIStoryboard(name: "Exam", bundle: nil)
         
-        var screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
+        let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
         
         screen.typeExam = 1
         
@@ -35,12 +37,33 @@ class MainExamViewController: UIViewController {
     
     
     @IBAction func A2_Btn_Click(_ sender: Any) {
+        let sb = UIStoryboard(name: "Exam", bundle: nil)
+        
+        let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
+        
+        screen.typeExam = 2
+        
+        self.navigationController?.pushViewController(screen, animated: true)
     }
     
     @IBAction func B1_Btn_Click(_ sender: Any) {
+        let sb = UIStoryboard(name: "Exam", bundle: nil)
+        
+        let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
+        
+        screen.typeExam = 3
+        
+        self.navigationController?.pushViewController(screen, animated: true)
     }
     
     @IBAction func B2_Btn_Click(_ sender: Any) {
+        let sb = UIStoryboard(name: "Exam", bundle: nil)
+        
+        let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
+        
+        screen.typeExam = 4
+        
+        self.navigationController?.pushViewController(screen, animated: true)
     }
     
     /*
@@ -52,5 +75,17 @@ class MainExamViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+        
+        func customizeBtn (btn: UIButton){
+            btn.layer.cornerRadius = 20
+            btn.clipsToBounds = true
+        }
+        
+        func customizeView (){
+            customizeBtn(btn: A1_Btn)
+            customizeBtn(btn: A2_Btn)
+            customizeBtn(btn: B1_Btn)
+            customizeBtn(btn: B2_Btn)
+        }
 
 }

@@ -14,9 +14,13 @@ class ListExamViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        var cell = listExamView.dequeueReusableCell(withReuseIdentifier: "ExamCollectionViewCell", for: indexPath) as! ExamCollectionViewCell
+        let cell = listExamView.dequeueReusableCell(withReuseIdentifier: "ExamCollectionViewCell", for: indexPath) as! ExamCollectionViewCell
+        cell.layer.cornerRadius = 20
+        cell.layer.borderColor = UIColor.black.cgColor
+        cell.layer.borderWidth = 2
+        cell.numTest = indexPath.row + 1
         
-        
+        cell.parentViewController = self
         return cell
         
         
@@ -47,4 +51,23 @@ class ListExamViewController: UIViewController, UICollectionViewDataSource, UICo
     }
     */
 
+}
+
+extension ListExamViewController : UICollectionViewDelegateFlowLayout{
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 28, bottom: 0, right: 28)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let collectionViewWidth = collectionView.bounds.width
+        return CGSize(width: self.listExamView.frame.width/2.5, height: 180)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
 }

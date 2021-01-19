@@ -9,7 +9,10 @@
 import UIKit
 
 class QuestionTableViewCell: UITableViewCell {
-
+    @IBOutlet var numAnswerTxt: UILabel!
+    
+    @IBOutlet var answerTxt: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -18,7 +21,15 @@ class QuestionTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        
         // Configure the view for the selected state
+    }
+    
+    func circleTxt (){
+        numAnswerTxt.layer.cornerRadius = numAnswerTxt.frame.width/2
+        numAnswerTxt.layer.borderWidth = 1
+        numAnswerTxt.layer.borderColor = UIColor.black.cgColor
+        numAnswerTxt.backgroundColor = UIColor.white
     }
 
 }
