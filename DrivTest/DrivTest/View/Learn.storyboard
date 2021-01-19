@@ -370,24 +370,104 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-UJ-nmK">
-                                <rect key="frame" x="131" y="121" width="34" height="30"/>
+                                <rect key="frame" x="20" y="745" width="91" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="backButtonTapped:" destination="aWt-MX-hnH" eventType="touchUpInside" id="3tR-uk-oX8"/>
                                 </connections>
                             </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-yC-sc8">
+                                <rect key="frame" x="20" y="64" width="362" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="362" id="hpU-oc-o82"/>
+                                    <constraint firstAttribute="height" constant="180" id="rvC-rH-WpZ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kIl-Ty-KqR">
+                                    <size key="itemSize" width="142" height="163"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="catagoryCollectionViewCell" id="rWd-c5-3Gw" customClass="catagoryCollectionViewCell" customModule="DrivTest" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="JG0-E1-Muz">
+                                            <rect key="frame" x="0.0" y="0.0" width="142" height="163"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Ko-LH-Enb">
+                                                    <rect key="frame" x="0.0" y="0.0" width="142" height="163"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="142" height="163"/>
+                                        <connections>
+                                            <outlet property="bg" destination="0Ko-LH-Enb" id="JVb-am-2GC"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pK8-yC-sc8" firstAttribute="top" secondItem="R0P-aG-MGh" secondAttribute="top" constant="20" id="LnX-Np-xax"/>
+                            <constraint firstItem="pK8-yC-sc8" firstAttribute="leading" secondItem="R0P-aG-MGh" secondAttribute="leading" constant="20" id="WkM-gz-K06"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R0P-aG-MGh"/>
                     </view>
                     <connections>
                         <outlet property="backButton" destination="O3b-UJ-nmK" id="Ptg-V7-X6t"/>
+                        <outlet property="catagoryCollectionView" destination="pK8-yC-sc8" id="qsS-2P-Y5g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TvB-Ty-YAP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-600" y="936"/>
+            <point key="canvasLocation" x="-600" y="935.49107142857133"/>
+        </scene>
+        <!--Watching View Controller-->
+        <scene sceneID="Qd5-3y-mk9">
+            <objects>
+                <viewController storyboardIdentifier="WatchingViewController" id="MSq-En-Hbx" customClass="WatchingViewController" customModule="DrivTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xFi-ey-wzk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csW-HO-3UJ" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="7jK-a3-w99"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-5i-PHC">
+                                <rect key="frame" x="0.0" y="779" width="86" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="didTapBackButton:" destination="MSq-En-Hbx" eventType="touchUpInside" id="Ie0-8L-onl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vEn-2G-hrt" firstAttribute="trailing" secondItem="csW-HO-3UJ" secondAttribute="trailing" id="J4q-kT-4HV"/>
+                            <constraint firstItem="csW-HO-3UJ" firstAttribute="leading" secondItem="vEn-2G-hrt" secondAttribute="leading" id="WRc-MW-jps"/>
+                            <constraint firstItem="csW-HO-3UJ" firstAttribute="top" secondItem="vEn-2G-hrt" secondAttribute="top" id="tPs-YP-pJ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vEn-2G-hrt"/>
+                    </view>
+                    <connections>
+                        <outlet property="BackButton" destination="Rbl-5i-PHC" id="PuF-tr-8Fs"/>
+                        <outlet property="playerView" destination="csW-HO-3UJ" id="qyD-3C-FbE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iUt-Nv-O0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="933.48214285714278"/>
         </scene>
     </scenes>
     <resources>

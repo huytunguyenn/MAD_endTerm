@@ -39,7 +39,7 @@ class LearnViewController: UIViewController {
     // layout for collection view
     var layout = UICollectionViewLayout()
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         

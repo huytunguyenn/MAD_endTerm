@@ -1,16 +1,20 @@
 PODS:
   - paper-onboarding (6.1.5)
+  - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - paper-onboarding
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
     - paper-onboarding
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
+  youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 6219314040813d9f0df9775dd7dd509bf3a06811
+PODFILE CHECKSUM: 9132ec8351348858e807f8d402dd8e13d05adc50
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
