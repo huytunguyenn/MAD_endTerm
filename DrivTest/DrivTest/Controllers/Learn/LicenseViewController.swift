@@ -18,7 +18,7 @@ class titleData {
 
 class LicenseViewController: UIViewController {
     
-    var type: Int = -1; // license type (A1,A2,..)
+    var type: Int = -1; // license type (A1,A2,B1,B2,C,F)
     
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabelImageView: UIImageView!
@@ -103,10 +103,11 @@ extension LicenseViewController : UICollectionViewDelegate, UICollectionViewData
     }
     // click on category image
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let dest = storyboard?.instantiateViewController(identifier: "LicenseViewController") as! LicenseViewController
-//        dest.type = indexPath.row;
-//        dest.modalPresentationStyle = .fullScreen
-//        self.present(dest, animated: true, completion: nil)
+        let dest = storyboard?.instantiateViewController(identifier: "QuizViewController") as! QuizViewController
+        dest.type = type // license type (A1,A2,B1,B2,C,F)
+        dest.subtype = indexPath.row // question type (cauhoidiemliet,khainiemquytac,hethongbienbao,vanhoadaoduc,cauhoisahinh)
+        dest.modalPresentationStyle = .fullScreen
+        self.present(dest, animated: true, completion: nil)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

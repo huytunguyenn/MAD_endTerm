@@ -91,7 +91,7 @@ extension LearnViewController : UICollectionViewDelegate, UICollectionViewDataSo
     // click on license image
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let dest = storyboard?.instantiateViewController(identifier: "LicenseViewController") as! LicenseViewController
-        dest.type = indexPath.row;
+        dest.type = indexPath.row; // license type (A1,A2,B1,B2,C,F)
         dest.modalPresentationStyle = .fullScreen
         self.present(dest, animated: true, completion: nil)
     }

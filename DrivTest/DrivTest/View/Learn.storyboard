@@ -220,6 +220,147 @@
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="251.78571428571428"/>
         </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="N31-tY-7Un">
+            <objects>
+                <viewController storyboardIdentifier="QuizViewController" id="4xD-a9-mNk" customClass="QuizViewController" customModule="DrivTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pkE-Sw-GRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUk-Ng-FYA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6e6-4t-tO7">
+                                        <rect key="frame" x="0.0" y="173" width="107" height="15"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-0l-jfQ">
+                                        <rect key="frame" x="41" y="90" width="27" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="exitbutton2"/>
+                                        <connections>
+                                            <action selector="exitButtonTapped:" destination="4xD-a9-mNk" eventType="touchUpInside" id="MVI-9c-cdH"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="XX/25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0F-LL-jPP">
+                                        <rect key="frame" x="183" y="68" width="48" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Correct: 10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndc-yv-pfQ">
+                                        <rect key="frame" x="165" y="121" width="85" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="188" id="LZL-A8-7Mu"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dzd-Zz-KyF">
+                                <rect key="frame" x="0.0" y="188" width="414" height="708"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maK-QM-RSF">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="266"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cau hoi: hello ca nha iu cua kem. Gai nhat do me ra te sa he e he he e he " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="12" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGZ-BQ-gfK">
+                                                <rect key="frame" x="34" y="8" width="346" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.9173629679144385" green="0.9173629679144385" blue="0.9173629679144385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="58A-CT-3oM">
+                                        <rect key="frame" x="0.0" y="266" width="414" height="442"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2r2-f7-Qfu">
+                                                <rect key="frame" x="45" y="32" width="324" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title=" A. ASDASDASDA SDASDASDASDASDASDASDASDASDSA"/>
+                                                <connections>
+                                                    <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="r5v-D2-6T1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVa-Rk-lty">
+                                                <rect key="frame" x="45" y="112" width="324" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="A. Duoc phep"/>
+                                                <connections>
+                                                    <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="zJy-xk-wDZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUY-GK-zMc">
+                                                <rect key="frame" x="45" y="188" width="324" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="A. Duoc phep"/>
+                                                <connections>
+                                                    <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="w2D-gg-Hen"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-KA-9w5">
+                                                <rect key="frame" x="45" y="267" width="324" height="56"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="A. Duoc phep"/>
+                                                <connections>
+                                                    <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="y2c-OX-PEE"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.91736296790000005" green="0.91736296790000005" blue="0.91736296790000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="442" id="vZ8-bp-C6f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="58A-CT-3oM" secondAttribute="bottom" id="BZc-Hq-R4C"/>
+                                    <constraint firstItem="58A-CT-3oM" firstAttribute="top" secondItem="maK-QM-RSF" secondAttribute="bottom" id="acd-TZ-cFz"/>
+                                    <constraint firstItem="58A-CT-3oM" firstAttribute="leading" secondItem="dzd-Zz-KyF" secondAttribute="leading" id="eWU-5s-afT"/>
+                                    <constraint firstItem="58A-CT-3oM" firstAttribute="top" secondItem="maK-QM-RSF" secondAttribute="bottom" id="hhQ-vl-CpS"/>
+                                    <constraint firstItem="maK-QM-RSF" firstAttribute="leading" secondItem="dzd-Zz-KyF" secondAttribute="leading" id="hyN-85-DI5"/>
+                                    <constraint firstItem="maK-QM-RSF" firstAttribute="top" secondItem="dzd-Zz-KyF" secondAttribute="top" id="p9A-Ef-q9M"/>
+                                    <constraint firstAttribute="trailing" secondItem="58A-CT-3oM" secondAttribute="trailing" id="tfB-Ad-46J"/>
+                                    <constraint firstAttribute="trailing" secondItem="maK-QM-RSF" secondAttribute="trailing" id="zpx-XR-aZP"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bUk-Ng-FYA" firstAttribute="top" secondItem="pkE-Sw-GRO" secondAttribute="top" id="7Lq-N4-Gsb"/>
+                            <constraint firstItem="dzd-Zz-KyF" firstAttribute="top" secondItem="bUk-Ng-FYA" secondAttribute="bottom" id="9mJ-45-nZJ"/>
+                            <constraint firstItem="bUk-Ng-FYA" firstAttribute="trailing" secondItem="av2-6e-hcU" secondAttribute="trailing" id="Uae-J9-aAI"/>
+                            <constraint firstItem="dzd-Zz-KyF" firstAttribute="trailing" secondItem="av2-6e-hcU" secondAttribute="trailing" id="bfF-Jo-Fco"/>
+                            <constraint firstItem="bUk-Ng-FYA" firstAttribute="leading" secondItem="av2-6e-hcU" secondAttribute="leading" id="lyg-77-sRd"/>
+                            <constraint firstItem="dzd-Zz-KyF" firstAttribute="leading" secondItem="av2-6e-hcU" secondAttribute="leading" id="nld-hg-jpD"/>
+                            <constraint firstAttribute="bottom" secondItem="dzd-Zz-KyF" secondAttribute="bottom" id="usF-Ja-E6e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="av2-6e-hcU"/>
+                    </view>
+                    <connections>
+                        <outlet property="aButton" destination="2r2-f7-Qfu" id="ch3-kB-2MC"/>
+                        <outlet property="bButton" destination="oVa-Rk-lty" id="T61-on-X82"/>
+                        <outlet property="cButton" destination="bUY-GK-zMc" id="OKe-xU-XZF"/>
+                        <outlet property="dButton" destination="jd1-KA-9w5" id="ckM-C8-s1O"/>
+                        <outlet property="progressView" destination="6e6-4t-tO7" id="hRT-dI-lrH"/>
+                        <outlet property="questionCounter" destination="d0F-LL-jPP" id="QGv-ff-sQP"/>
+                        <outlet property="questionLabel" destination="gGZ-BQ-gfK" id="xIE-WK-ZeS"/>
+                        <outlet property="scoreLabel" destination="ndc-yv-pfQ" id="kli-64-iLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KH-4l-jug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="249.77678571428569"/>
+        </scene>
         <!--Video View Controller-->
         <scene sceneID="7AQ-iJ-HfY">
             <objects>
@@ -254,6 +395,7 @@
         <image name="book-24" width="32" height="32"/>
         <image name="chonloaibang" width="500" height="150"/>
         <image name="exitbutton" width="110" height="110"/>
+        <image name="exitbutton2" width="110" height="110"/>
         <image name="video" width="1500" height="823"/>
         <image name="xemvideo" width="620" height="128"/>
     </resources>
