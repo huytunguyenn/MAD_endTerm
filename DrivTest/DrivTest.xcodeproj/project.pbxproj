@@ -38,6 +38,8 @@
 		A417FB0225B6ABF80007B4E9 /* ListQuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417FB0125B6ABF80007B4E9 /* ListQuestionViewController.swift */; };
 		A417FB0425B6AC170007B4E9 /* ExamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417FB0325B6AC170007B4E9 /* ExamCollectionViewCell.swift */; };
 		A417FB0625B6AC490007B4E9 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417FB0525B6AC490007B4E9 /* QuestionTableViewCell.swift */; };
+		A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257B925B8240900E2F25C /* ExamModel.swift */; };
+		A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257BB25B840B500E2F25C /* ExamBankModel.swift */; };
 		ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +79,8 @@
 		A417FB0125B6ABF80007B4E9 /* ListQuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListQuestionViewController.swift; path = DrivTest/Controllers/ListQuestionViewController.swift; sourceTree = SOURCE_ROOT; };
 		A417FB0325B6AC170007B4E9 /* ExamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExamCollectionViewCell.swift; path = DrivTest/Controllers/ExamCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A417FB0525B6AC490007B4E9 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionTableViewCell.swift; path = DrivTest/Controllers/QuestionTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		A4A257B925B8240900E2F25C /* ExamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamModel.swift; sourceTree = "<group>"; };
+		A4A257BB25B840B500E2F25C /* ExamBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamBankModel.swift; sourceTree = "<group>"; };
 		ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -201,6 +205,8 @@
 				2D7E0E842588BBA600A92ABD /* OnBoarding_Images.swift */,
 				2DC04B0D25B6C3F10010424F /* Question.swift */,
 				2DC04B0F25B6CCE10010424F /* QuestionBank.swift */,
+				A4A257B925B8240900E2F25C /* ExamModel.swift */,
+				A4A257BB25B840B500E2F25C /* ExamBankModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -346,6 +352,7 @@
 			files = (
 				2DD5C64C25B5E34B0082CED3 /* licenseCollectionViewCell.swift in Sources */,
 				2DBF2855258A1918009F26EE /* SignUpViewController.swift in Sources */,
+				A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */,
 				2D926546258CDD76004C091F /* catagoryCollectionViewCell.swift in Sources */,
 				A417FB0025B6ABE50007B4E9 /* ListExamViewController.swift in Sources */,
 				2D0BC592258837A3000E5504 /* AppDelegate.swift in Sources */,
@@ -356,6 +363,7 @@
 				2D0BC594258837A3000E5504 /* SceneDelegate.swift in Sources */,
 				A417FB0625B6AC490007B4E9 /* QuestionTableViewCell.swift in Sources */,
 				ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */,
+				A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */,
 				A417FB0425B6AC170007B4E9 /* ExamCollectionViewCell.swift in Sources */,
 				2D7E0E852588BBA600A92ABD /* OnBoarding_Images.swift in Sources */,
 				2DC04B1025B6CCE10010424F /* QuestionBank.swift in Sources */,
