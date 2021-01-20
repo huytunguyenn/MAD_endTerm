@@ -7,5 +7,6 @@ target 'DrivTest' do
 
   # Pods for DrivTest
   pod 'paper-onboarding'
+  pod 'youtube-ios-player-helper'
 
 end

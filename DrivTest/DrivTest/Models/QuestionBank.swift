@@ -12,7 +12,7 @@ import Foundation
 class QuestionBank {
     var list = [Question]()
     
-    init(type:Int, subtype:Int){
+    init(type:Int, subtype:Int){	
         
         if(type == 0){ // =============================================================== bang A1
             if(subtype == 0){ // --------------------------------------------------------------------------------------------------- cau hoi diem liet
