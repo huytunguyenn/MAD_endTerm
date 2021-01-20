@@ -27,7 +27,7 @@ class QuizViewController: UIViewController {
     
     // init list of questions
     lazy var allQuestions = QuestionBank(type: type,subtype: subtype)
-
+    
     // count variables
     var questionNumber:Int = 0
     var score:Int = 0
@@ -100,7 +100,6 @@ class QuizViewController: UIViewController {
                 // increase score
                 score += 1
             }
-         
             // change to green button
             sender.backgroundColor = UIColor(red: 0.76, green: 0.88, blue: 0.77, alpha: 1.00)
             sender.layer.shadowColor = UIColor(red: 0.00, green: 0.55, blue: 0.01, alpha: 1.00).cgColor
@@ -119,18 +118,34 @@ class QuizViewController: UIViewController {
     
     // tap '->' button
     @IBAction func nextButtonTapped(_ sender: Any) {
-        hasWrong = false
-        // move to next question
-        questionNumber += 1
-        // change answer button to normal
-        normalizeButton()
-        updateQuestion()
+        if (questionNumber == allQuestions.list.count - 1){ // last question done
+            // go to finish view
+            let dest = storyboard?.instantiateViewController(identifier: "FinishQuizViewController") as! FinishQuizViewController
+            dest.type = type
+            dest.subtype = subtype
+            dest.score = score
+            dest.totalQuestions = allQuestions.list.count
+            dest.modalPresentationStyle = .fullScreen
+            self.present(dest, animated: true, completion: nil)
+        }else{
+            hasWrong = false
+            // move to next question
+            questionNumber += 1
+            // change answer button to normal
+            normalizeButton()
+            updateQuestion()
+        }
+        
     }
     
     
     // tap 'X' button
     @IBAction func exitButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        // show alert popup
+        let dest = storyboard?.instantiateViewController(identifier: "ExitPopUpViewController") as! ExitPopUpViewController
+        dest.type = type
+        dest.modalTransitionStyle = .crossDissolve
+        self.present(dest, animated: true, completion: nil)
     }
     
     // update question & answers
@@ -145,10 +160,7 @@ class QuizViewController: UIViewController {
             dButton.setTitle(allQuestions.list[questionNumber].optionD, for: .normal)
             selectedAnswer = allQuestions.list[questionNumber].correctAnswer
         }else{
-            // go to finish view
-            
-            // restart quiz
-            restartQuiz()
+          
         }
         updateUI()
     }
@@ -175,10 +187,5 @@ class QuizViewController: UIViewController {
         progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
     }
     
-    
-    func restartQuiz(){
-        score = 0
-        questionNumber = 0
-        updateQuestion()
-    }
+
 }

@@ -28,6 +28,8 @@
 		2DC04B0E25B6C3F10010424F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC04B0D25B6C3F10010424F /* Question.swift */; };
 		2DC04B1025B6CCE10010424F /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC04B0F25B6CCE10010424F /* QuestionBank.swift */; };
 		2DD5C64C25B5E34B0082CED3 /* licenseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD5C64B25B5E34B0082CED3 /* licenseCollectionViewCell.swift */; };
+		2DD7DA6525B89C17008523EB /* ExitPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7DA6425B89C17008523EB /* ExitPopUpViewController.swift */; };
+		2DD7DA6725B8A6E7008523EB /* FinishQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD7DA6625B8A6E7008523EB /* FinishQuizViewController.swift */; };
 		2DE363BB25887F0B00FCB8E5 /* Catagories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE363BA25887F0B00FCB8E5 /* Catagories.storyboard */; };
 		2DE363BD25887F2200FCB8E5 /* Exam.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE363BC25887F2200FCB8E5 /* Exam.storyboard */; };
 		2DE363BF25887F4400FCB8E5 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DE363BE25887F4400FCB8E5 /* User.storyboard */; };
@@ -68,6 +70,8 @@
 		2DC04B0D25B6C3F10010424F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		2DC04B0F25B6CCE10010424F /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		2DD5C64B25B5E34B0082CED3 /* licenseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = licenseCollectionViewCell.swift; sourceTree = "<group>"; };
+		2DD7DA6425B89C17008523EB /* ExitPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExitPopUpViewController.swift; sourceTree = "<group>"; };
+		2DD7DA6625B8A6E7008523EB /* FinishQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishQuizViewController.swift; sourceTree = "<group>"; };
 		2DE363BA25887F0B00FCB8E5 /* Catagories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Catagories.storyboard; sourceTree = "<group>"; };
 		2DE363BC25887F2200FCB8E5 /* Exam.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Exam.storyboard; sourceTree = "<group>"; };
 		2DE363BE25887F4400FCB8E5 /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				2DD5C64B25B5E34B0082CED3 /* licenseCollectionViewCell.swift */,
 				2D95450825B68177005B93B5 /* QuizViewController.swift */,
 				ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */,
+				2DD7DA6425B89C17008523EB /* ExitPopUpViewController.swift */,
+				2DD7DA6625B8A6E7008523EB /* FinishQuizViewController.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 			files = (
 				2DD5C64C25B5E34B0082CED3 /* licenseCollectionViewCell.swift in Sources */,
 				2DBF2855258A1918009F26EE /* SignUpViewController.swift in Sources */,
+				2DD7DA6725B8A6E7008523EB /* FinishQuizViewController.swift in Sources */,
 				A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */,
 				2D926546258CDD76004C091F /* catagoryCollectionViewCell.swift in Sources */,
 				A417FB0025B6ABE50007B4E9 /* ListExamViewController.swift in Sources */,
@@ -371,6 +378,7 @@
 				2D95450925B68177005B93B5 /* QuizViewController.swift in Sources */,
 				2D92653C258CB54D004C091F /* LearnViewController.swift in Sources */,
 				2D7E0E812588B62200A92ABD /* OnBoardingViewController.swift in Sources */,
+				2DD7DA6525B89C17008523EB /* ExitPopUpViewController.swift in Sources */,
 				2D318B43258CFB770067EE4E /* VideoViewController.swift in Sources */,
 				2DBF2859258A1EFA009F26EE /* RoundedTabBarController.swift in Sources */,
 			);

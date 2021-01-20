@@ -34,21 +34,21 @@ class LicenseViewController: UIViewController {
         titleData(_imageName: "title_f")
     ]
     // images for category image
-     var listCatImgData = [
-         titleData(_imageName: "pic_chdl"),
-         titleData(_imageName: "pic_knqt"),
-         titleData(_imageName: "pic_htbb"),
-         titleData(_imageName: "pic_vhdd"),
-         titleData(_imageName: "pic_chsh")
-     ]
+    var listCatImgData = [
+        titleData(_imageName: "pic_chdl"),
+        titleData(_imageName: "pic_knqt"),
+        titleData(_imageName: "pic_htbb"),
+        titleData(_imageName: "pic_vhdd"),
+        titleData(_imageName: "pic_chsh")
+    ]
     // images for category title image
-       var listTitleCatData = [
+    var listTitleCatData = [
         titleData(_imageName: "label_chdl"),
         titleData(_imageName: "label_knqt"),
         titleData(_imageName: "label_htbb"),
         titleData(_imageName: "label_vhdd"),
         titleData(_imageName: "label_chsh")
-       ]
+    ]
     // layout for collection view
     var layout = UICollectionViewLayout()
     
@@ -68,9 +68,17 @@ class LicenseViewController: UIViewController {
     }
     
     
-    
+    // back to learn VC
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        let dest = storyboard?.instantiateViewController(identifier: "LearnViewController") as! LearnViewController
+        // back trasistion (from top to bottom)
+        let transition = CATransition()
+        transition.duration = 0.3
+        transition.type = CATransitionType.push
+        transition.subtype = CATransitionSubtype.fromBottom
+        view.window!.layer.add(transition, forKey: kCATransition)
+        dest.modalPresentationStyle = .fullScreen
+        self.present(dest, animated: false, completion: nil)
     }
     
 }
@@ -97,7 +105,7 @@ extension LicenseViewController : UICollectionViewDelegate, UICollectionViewData
         cell.titleImageView.image = UIImage(named: listTitleCatData[indexPath.row].imageName)
         
         
-
+        
         cell.layer.cornerRadius = 12
         return cell
     }

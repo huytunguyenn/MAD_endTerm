@@ -51,7 +51,7 @@ class LearnViewController: UIViewController {
         }
         catagoryCollectionView.showsHorizontalScrollIndicator = false
         
-        // set up for video button
+        // set up for video button image (cause button cannot radius border)
         videoImageView.layer.cornerRadius = 16
         
         
