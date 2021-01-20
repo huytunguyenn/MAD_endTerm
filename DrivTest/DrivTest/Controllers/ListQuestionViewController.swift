@@ -74,7 +74,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = listAnserView.dequeueReusableCell(withIdentifier: "QuestionTableViewCell") as! QuestionTableViewCell
-        //print("*****************************")
+        print("*****************************")
         if (indexPath.row == 0){
             cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
         }
@@ -134,28 +134,71 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
                 }
                 
-
-                if (exam.listQuestion[presentQuestion].selected == -1){
-                    cell.layer.backgroundColor = UIColor.white.cgColor
+                
+                if (isfinshed == false){
+                    if (exam.listQuestion[presentQuestion].selected == -1){
+                        cell.layer.backgroundColor = UIColor.white.cgColor
+                    }
+                    else if(exam.listQuestion[presentQuestion].selected == indexPath.row){
+                        cell.layer.backgroundColor = UIColor.orange.cgColor
+                    }else{
+                         cell.layer.backgroundColor = UIColor.white.cgColor
+                    }
+                }else{
+                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                        
+                        cell.backgroundColor = UIColor.green
+                    }
+                    else{
+                        if (count == exam.listQuestion[presentQuestion].selected){
+                            if (exam.listQuestion[presentQuestion].correctAswer != exam.listQuestion[presentQuestion].selected){
+                                cell.backgroundColor = UIColor.red
+                            }
+                        }
+                        else{
+                            cell.backgroundColor = UIColor.white
+                        }
+                        
+                    }
                 }
-                else if(exam.listQuestion[presentQuestion].selected == indexPath.row){
-                    cell.layer.backgroundColor = UIColor.orange.cgColor
-                }
-                else{
-                     cell.layer.backgroundColor = UIColor.white.cgColor
+                if (isfinshed == false){
+                    if (exam.listQuestion[presentQuestion].selected == -1){
+                        cell.layer.backgroundColor = UIColor.white.cgColor
+                    }
+                    else if(exam.listQuestion[presentQuestion].selected == indexPath.row){
+                        cell.layer.backgroundColor = UIColor.orange.cgColor
+                    }else{
+                         cell.layer.backgroundColor = UIColor.white.cgColor
+                    }
+                }else{
+                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                        
+                        cell.backgroundColor = UIColor.green
+                    }
+                    else{
+                        if (count == exam.listQuestion[presentQuestion].selected){
+                            if (exam.listQuestion[presentQuestion].correctAswer != exam.listQuestion[presentQuestion].selected){
+                                cell.backgroundColor = UIColor.red
+                            }
+                        }
+                        else{
+                            cell.backgroundColor = UIColor.white
+                        }
+                        
+                    }
                 }
             }
         }
         
     }
-    
-    
+   
     @IBAction func nextClick(_ sender: Any) {
         if (presentQuestion < exam.amountQuestion - 1){
             presentQuestion += 1
             questionTxt.text = exam.listQuestion[presentQuestion].question
             numericQuestionTxt.text = String(presentQuestion + 1) + "/" + String(exam.amountQuestion)
-            print(presentQuestion)
+            print("next CLICK" + String(presentQuestion))
+           
             for count in 0..<4{
                 let indexPath = IndexPath(row: count, section: 0)
                 let cell = listAnserView.cellForRow(at: indexPath) as! QuestionTableViewCell
@@ -219,80 +262,99 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
             isfinshed = true
             for count in 0..<4{
                 let indexPath = IndexPath(row: count, section: 0)
-                let cell = listAnserView.cellForRow(at: indexPath) as! QuestionTableViewCell
-                if (count == exam.listQuestion[presentQuestion].correctAswer){
-                    
-                    cell.backgroundColor = UIColor.green
+                do {
+                    let cell = try listAnserView.cellForRow(at: indexPath) as! QuestionTableViewCell
+                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                                      
+                                      cell.backgroundColor = UIColor.green
+                                  }
+                                  else{
+                                      if (count == exam.listQuestion[presentQuestion].selected){
+                                          if (exam.listQuestion[presentQuestion].correctAswer != exam.listQuestion[presentQuestion].selected){
+                                              cell.backgroundColor = UIColor.red
+                                          }
+                                      }
+                                      else{
+                                          cell.backgroundColor = UIColor.white
+                                      }
+                                      
+                                  }
+                                  if (indexPath.row == 0){
+                                      cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
+                                      //cell.layer.backgroundColor = UIColor.black.cgColor
+                                         print(exam.listQuestion[presentQuestion].textQ?.optionA)
+                                  }
+                                  else if (indexPath.row == 1){
+                                      cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionB
+                                  }
+                                  else if (indexPath.row == 2){
+                                      cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionC
+                                  }
+                                  else if (indexPath.row == 3){
+                                      cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
+                                  }
+
+                } catch {
+                    print ("loi")
                 }
-                else{
-                    if (count == exam.listQuestion[presentQuestion].selected){
-                        if (exam.listQuestion[presentQuestion].correctAswer != exam.listQuestion[presentQuestion].selected){
-                            cell.backgroundColor = UIColor.red
-                        }
-                    }
-                    else{
-                        cell.backgroundColor = UIColor.white
-                    }
-                    
-                }
-                if (indexPath.row == 0){
-                    cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
-                    //cell.layer.backgroundColor = UIColor.black.cgColor
-                       print(exam.listQuestion[presentQuestion].textQ?.optionA)
-                }
-                else if (indexPath.row == 1){
-                    cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionB
-                }
-                else if (indexPath.row == 2){
-                    cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionC
-                }
-                else if (indexPath.row == 3){
-                    cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
-                }
+              
             }
+            
+            //listAnserView.reloadData();
 
             
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if (isfinshed == false){
-            exam.listQuestion[presentQuestion].selected = indexPath.row
-            print (exam.listQuestion[presentQuestion].textQ?.optionA)
-             for count in 0..<4{
-                 let indexCount = IndexPath(row: count, section: 0)
-                 let cell = listAnserView.cellForRow(at: indexCount) as! QuestionTableViewCell
-                 if (count == indexPath.row){
-                     cell.backgroundColor = UIColor.orange
-                 }
-                 else{
-                     cell.backgroundColor = UIColor.white
-                 }
-                 if (indexPath.row == 0){
-                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
-                     //cell.layer.backgroundColor = UIColor.black.cgColor
-                        print(exam.listQuestion[presentQuestion].textQ?.optionA)
-                 }
-                 else if (indexPath.row == 1){
-                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionB
-                 }
-                 else if (indexPath.row == 2){
-                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionC
-                 }
-                 else if (indexPath.row == 3){
-                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
-                 }
-             }
-            listAnserView.reloadData()
-
-        }
-        else{
-            
-        }
-
-        
+        selectAnswer(answer: indexPath.row)
     }
     
+    
+    func selectAnswer(answer: Int){
+           if (isfinshed == false){
+               exam.listQuestion[presentQuestion].selected = answer
+               //print (exam.listQuestion[presentQuestion].textQ?.optionA)
+               print ("**** choose. ***")
+          
+               
+                for count in 0..<4{
+                    let indexCount = IndexPath(row: count, section: 0)
+                    let cell = listAnserView.cellForRow(at: indexCount) as! QuestionTableViewCell
+                    print("sdfsdfdsfsdfsdsfsdf")
+                       
+                    if (count == answer){
+                        cell.backgroundColor = UIColor.orange
+                    }
+                    else{
+                        cell.backgroundColor = UIColor.white
+                    }
+                    if (answer == 0){
+                        cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
+                        //cell.layer.backgroundColor = UIColor.black.cgColor
+                           //print(exam.listQuestion[presentQuestion].textQ?.optionA)
+                    }
+                    else if (answer == 1){
+                        cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionB
+                    }
+                    else if (answer == 2){
+                        cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionC
+                    }
+                    else if (answer == 3){
+                        cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
+                    }
+                }
+               self.listAnserView.reloadData()
+
+           }
+           else{
+               
+           }
+
+
+    }
+       
+       
     /*
     // MARK: - Navigation
 
