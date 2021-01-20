@@ -23,6 +23,7 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var bButton: UIButton!
     @IBOutlet weak var cButton: UIButton!
     @IBOutlet weak var dButton: UIButton!
+    @IBOutlet weak var nextButton: UIButton!
     
     // init list of questions
     lazy var allQuestions = QuestionBank(type: type,subtype: subtype)
@@ -31,6 +32,7 @@ class QuizViewController: UIViewController {
     var questionNumber:Int = 0
     var score:Int = 0
     var selectedAnswer:Int = 0
+    var hasWrong:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,20 +40,51 @@ class QuizViewController: UIViewController {
         // center text in answer button
         aButton.titleLabel!.textAlignment = .center
         aButton.titleLabel!.numberOfLines = 0
-        aButton.layer.cornerRadius = 20
+        aButton.layer.cornerRadius = 12
         aButton.clipsToBounds = true
+        aButton.titleEdgeInsets = UIEdgeInsets(top: 12,left: 12,bottom: 12,right: 12)
+        // Shadow Color
+        aButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        aButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
+        aButton.layer.shadowOpacity = 1.0
+        aButton.layer.shadowRadius = 0.0
+        aButton.layer.masksToBounds = false
+        
         bButton.titleLabel!.textAlignment = .center
         bButton.titleLabel!.numberOfLines = 0
-        bButton.layer.cornerRadius = 20
+        bButton.layer.cornerRadius = 12
         bButton.clipsToBounds = true
+        bButton.titleEdgeInsets = UIEdgeInsets(top: 12,left: 12,bottom: 12,right: 12)
+        bButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        bButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
+        bButton.layer.shadowOpacity = 1.0
+        bButton.layer.shadowRadius = 0.0
+        bButton.layer.masksToBounds = false
+        
         cButton.titleLabel!.textAlignment = .center
         cButton.titleLabel!.numberOfLines = 0
-        cButton.layer.cornerRadius = 20
+        cButton.layer.cornerRadius = 12
         cButton.clipsToBounds = true
+        cButton.titleEdgeInsets = UIEdgeInsets(top: 12,left: 12,bottom: 12,right: 12)
+        cButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        cButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
+        cButton.layer.shadowOpacity = 1.0
+        cButton.layer.shadowRadius = 0.0
+        cButton.layer.masksToBounds = false
+        
         dButton.titleLabel!.textAlignment = .center
         dButton.titleLabel!.numberOfLines = 0
-        dButton.layer.cornerRadius = 20
+        dButton.layer.cornerRadius = 12
         dButton.clipsToBounds = true
+        dButton.titleEdgeInsets = UIEdgeInsets(top: 12,left: 12,bottom: 12,right: 12)
+        dButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        dButton.layer.shadowOffset = CGSize(width: 0.0, height: 2.5)
+        dButton.layer.shadowOpacity = 1.0
+        dButton.layer.shadowRadius = 0.0
+        dButton.layer.masksToBounds = false
+        
+        // hide next button
+        nextButton.isHidden = true
         
         updateQuestion()
         updateUI()
@@ -61,28 +94,49 @@ class QuizViewController: UIViewController {
     
     
     @IBAction func answerPressed(_ sender: UIButton) {
-        if sender.tag == selectedAnswer { // corrected answer
-            score += 1
+        normalizeButton()
+        if (sender.tag == selectedAnswer) { // corrected answer
+            if (hasWrong == false){
+                // increase score
+                score += 1
+            }
+         
+            // change to green button
+            sender.backgroundColor = UIColor(red: 0.76, green: 0.88, blue: 0.77, alpha: 1.00)
+            sender.layer.shadowColor = UIColor(red: 0.00, green: 0.55, blue: 0.01, alpha: 1.00).cgColor
+            // show next button
+            nextButton.isHidden = false
         }else { // wrong answer
-            print("Dap an dung: \(selectedAnswer)")
+            // change to red button
+            sender.backgroundColor = UIColor(red: 0.98, green: 0.82, blue: 0.76, alpha: 1.00)
+            sender.layer.shadowColor = UIColor(red: 0.86, green: 0.24, blue: 0.00, alpha: 1.00).cgColor
+            
+            hasWrong = true
         }
         
-        // move to next question
-        questionNumber += 1
-        updateQuestion()
         
     }
     
+    // tap '->' button
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        hasWrong = false
+        // move to next question
+        questionNumber += 1
+        // change answer button to normal
+        normalizeButton()
+        updateQuestion()
+    }
     
     
+    // tap 'X' button
     @IBAction func exitButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     // update question & answers
     func updateQuestion(){
-        
         if (questionNumber < allQuestions.list.count){
+            // update question
             //flagview.image = UIImage(named:(allQuestions.list[questionNumber].questionImage))
             questionLabel.text = allQuestions.list[questionNumber].question
             aButton.setTitle(allQuestions.list[questionNumber].optionA, for: .normal)
@@ -97,6 +151,21 @@ class QuizViewController: UIViewController {
             restartQuiz()
         }
         updateUI()
+    }
+    
+    // change buttons to normal
+    func normalizeButton(){
+        // hide next button
+        nextButton.isHidden = true
+        // reset answer button
+        aButton.backgroundColor = .white
+        aButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        bButton.backgroundColor = .white
+        bButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        cButton.backgroundColor = .white
+        cButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        dButton.backgroundColor = .white
+        dButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
     }
     
     // update progress view, question counter, score

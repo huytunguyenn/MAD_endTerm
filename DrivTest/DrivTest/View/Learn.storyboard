@@ -302,8 +302,10 @@
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2r2-f7-Qfu">
                                                 <rect key="frame" x="45" y="32" width="324" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="a"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="a">
+                                                    <color key="titleColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="r5v-D2-6T1"/>
                                                 </connections>
@@ -311,8 +313,10 @@
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="oVa-Rk-lty">
                                                 <rect key="frame" x="45" y="112" width="324" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="b"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="b">
+                                                    <color key="titleColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="zJy-xk-wDZ"/>
                                                 </connections>
@@ -320,8 +324,10 @@
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bUY-GK-zMc">
                                                 <rect key="frame" x="45" y="188" width="324" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="c"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="c">
+                                                    <color key="titleColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="w2D-gg-Hen"/>
                                                 </connections>
@@ -329,10 +335,20 @@
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="jd1-KA-9w5">
                                                 <rect key="frame" x="45" y="267" width="324" height="56"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.88235294119999996" green="0.85098039219999999" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="d"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="d">
+                                                    <color key="titleColor" red="0.02560675808" green="0.040128575020000001" blue="0.47716968910000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="answerPressed:" destination="4xD-a9-mNk" eventType="touchUpInside" id="y2c-OX-PEE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iQA-Ag-evu">
+                                                <rect key="frame" x="326" y="357" width="43" height="43"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="next"/>
+                                                <connections>
+                                                    <action selector="nextButtonTapped:" destination="4xD-a9-mNk" eventType="touchUpInside" id="UwW-R6-4zg"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -371,6 +387,7 @@
                         <outlet property="bButton" destination="oVa-Rk-lty" id="T61-on-X82"/>
                         <outlet property="cButton" destination="bUY-GK-zMc" id="OKe-xU-XZF"/>
                         <outlet property="dButton" destination="jd1-KA-9w5" id="ckM-C8-s1O"/>
+                        <outlet property="nextButton" destination="iQA-Ag-evu" id="HEp-ei-cvV"/>
                         <outlet property="progressView" destination="6e6-4t-tO7" id="hRT-dI-lrH"/>
                         <outlet property="questionCounter" destination="d0F-LL-jPP" id="QGv-ff-sQP"/>
                         <outlet property="questionLabel" destination="gGZ-BQ-gfK" id="xIE-WK-ZeS"/>
@@ -417,6 +434,7 @@
         <image name="exitbutton" width="110" height="110"/>
         <image name="exitbutton2" width="110" height="110"/>
         <image name="hocvideo" width="1500" height="823"/>
+        <image name="next" width="64" height="64"/>
         <image name="xemvideo" width="620" height="128"/>
     </resources>
 </document>

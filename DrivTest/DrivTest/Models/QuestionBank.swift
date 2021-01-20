@@ -16,6 +16,12 @@ class QuestionBank {
         
         if(type == 0){ // =============================================================== bang A1
             if(subtype == 0){ // --------------------------------------------------------------------------------------------------- cau hoi diem liet
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Nếu có ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
                 list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
                                      choiceA: "A. Đỗ xe trên đường phố.",
                                      choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
@@ -34,12 +40,6 @@ class QuestionBank {
                                      choiceC: "C. Được cơ quan có thẩm quyền cấp phép.",
                                      choiceD: "D. Không được phép.",
                                      answer: 3))
-                list.append(Question(questionText: "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
-                                     choiceA: "A. Bị nghiêm cấm.",
-                                     choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu có chất ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
-                                     choiceD: "D. Tất cả đều sai.",
-                                     answer: 1))
                 list.append(Question(questionText: "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
                                      choiceA: "A. Không được phép.",
                                      choiceB: "B. Chỉ được lái ở tốc độ chậm và quãng đường ngắn.",
@@ -49,12 +49,12 @@ class QuestionBank {
                 list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
                                      choiceA: "A. Bị nghiêm cấm.",
                                      choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceC: "C. Nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
                 list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
                                      choiceA: "A. Chỉ bị nhắc nhở.",
-                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceB: "B. Bị xử phạt hành chính và hình sự tùy theo mức độ vi phạm.",
                                      choiceC: "C. Không bị xử lý hình sự.",
                                      choiceD: "D. Lập biên bản",
                                      answer: 2))
@@ -119,8 +119,8 @@ class QuestionBank {
                                      choiceD: "D. Được phép với ô tô tải.",
                                      answer: 2))
                 list.append(Question(questionText: "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
-                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.",
-                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.",
+                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc.",
+                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
@@ -157,10 +157,10 @@ class QuestionBank {
                                      choiceD: "D. Lề đường không sử dụng cho người đi bộ.",
                                      answer: 2))
                 list.append(Question(questionText: "“Làn đường” là gì?",
-                                     choiceA: "A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.",
-                                     choiceB: "B. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
-                                     choiceC: "C. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.",
-                                     choiceD: "D. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho người đi bộ",
+                                     choiceA: "A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường.",
+                                     choiceB: "B. Là một phần của phần đường xe chạy được chia theo chiều dọc cho xe chạy an toàn.",
+                                     choiceC: "C. Là một phần của phần đường xe chạy được chia cho xe ô tô chạy an toàn.",
+                                     choiceD: "D. Là một phần của phần đường xe chạy được sử dụng cho người đi bộ.",
                                      answer: 2))
                 list.append(Question(questionText: "“Khổ giới hạn đường bộ” để xe và hàng hóa trên xe đi lại an toàn bao gồm những giới hạn nào?",
                                      choiceA: "A. Giới hạn về chiều cao hoặc chiều rộng của cầu đường.",
@@ -169,9 +169,9 @@ class QuestionBank {
                                      choiceD: "D. Giới hạn về chiều cao của cầu, đường.",
                                      answer: 2))
                 list.append(Question(questionText: "Khái niệm “dải phân cách” được hiểu như thế nào là đúng?",
-                                     choiceA: "A. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.",
-                                     choiceB: "B. Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.",
-                                     choiceC: "C. Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông.",
+                                     choiceA: "A. Là bộ phận của đường để phân chia mặt đường thành hai chiều.",
+                                     choiceB: "B. Là bộ phận của đường để ngăn cách không cho các loại xe.",
+                                     choiceC: "C. Là bộ phận của đường để phân tách phần đường xe chạy và hành lang.",
                                      choiceD: "D. Là làn đường phân chia mặt đường cho người đi bộ.",
                                      answer: 1))
                 list.append(Question(questionText: "Đường mà trên đó phương tiện tham gia giao thông phải nhường đường cho các phương tiện giao thông đến từ hướng khác tại nơi đường giao nhau, được cắm biển báo hiệu nhường đường là loại gì?",
@@ -187,10 +187,10 @@ class QuestionBank {
                                      choiceD: "D. Đường ưu tiên.",
                                      answer: 4))
                 list.append(Question(questionText: "Khái niệm “phương tiện giao thông thô sơ đường bộ” được hiểu thế nào là đúng?",
-                                     choiceA: "A. Gồm xe đạp, xe xích lô, xe lăn dùng cho người khuyết tật, xe xúc vật kéo và các loại xe tương tự.",
+                                     choiceA: "A. Gồm xe đạp, xe xích lô, xe lăn dùng cho người khuyết tật, xe xúc vật kéo.",
                                      choiceB: "B. Gồm xe đạp, xe gắn máy, xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.",
                                      choiceC: "C. Gồm xe ô tô, máy kéo, rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo.",
-                                     choiceD: "D. Gồm xe đạp, đạp máy, đạp điện, xe xích lô, xe lăn dùng cho người khuyết tật, xe xúc vật kéo và các loại xe tương tự.",
+                                     choiceD: "D. Gồm xe đạp, đạp máy, đạp điện, xe xích lô, xe lăn cho người khuyết tật, xe xúc vật kéo.",
                                      answer: 4))
                 list.append(Question(questionText: "“Phương tiện tham gia giao thông đường bộ” gồm những loại nào?",
                                      choiceA: "A. Phương tiện giao thông cơ giới đường bộ.",
@@ -314,7 +314,7 @@ class QuestionBank {
                 list.append(Question(questionText: "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
                                      choiceA: "A. Bị nghiêm cấm.",
                                      choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu có chất ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
+                                     choiceC: "C. Nếu có ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
                 list.append(Question(questionText: "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
@@ -384,8 +384,8 @@ class QuestionBank {
                                      choiceD: "D. Được phép với ô tô tải.",
                                      answer: 2))
                 list.append(Question(questionText: "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
-                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.",
-                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.",
+                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đường cao tốc, đường hẹp, đường dốc.",
+                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ, trên đường quốc lộ.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
@@ -634,8 +634,8 @@ class QuestionBank {
                                      choiceD: "D. Được phép với ô tô tải.",
                                      answer: 2))
                 list.append(Question(questionText: "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
-                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.",
-                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.",
+                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc.",
+                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ, trên đường quốc lộ.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
@@ -659,7 +659,7 @@ class QuestionBank {
                                      answer: 3))
             }else if(subtype == 1){ // --------------------------------------------------------------------------------------------------- khai niem quy tac
                 list.append(Question(questionText: "Khái niệm “dải phân cách” được hiểu như thế nào là đúng?",
-                                     choiceA: "A. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.",
+                                     choiceA: "A. Là bộ phận của đường để phân chia phần đường của xe cơ giới và xe thô sơ.",
                                      choiceB: "B. Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.",
                                      choiceC: "C. Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông.",
                                      choiceD: "D. Là làn đường phân chia mặt đường cho người đi bộ.",
@@ -716,15 +716,15 @@ class QuestionBank {
                 
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
-                                     choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển.",
-                                     choiceB: "B.  hi vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải được chủ hàng cho phép.",
+                                     choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
+                                     choiceB: "B. Vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm,siêu trọng phải được chủ hàng cho phép.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
                 list.append(Question(questionText: "Người lái xe và nhân viên phục vụ trên xe ô tô vận tải hành khách phải có những trách nhiệm gì theo quy định dưới đây?",
-                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe sau khi khởi hành; có trách nhiệm lái xe thật nhanh khi chậm giờ của khách.",
-                                     choiceB: "B. Kiểm tra các điều kiện bảo đảm an toàn của xe trước khi khởi hành; có thái độ văn minh, lịch sự, hướng dẫn hành khách ngồi đúng nơi quy định.",
-                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách đi xe, giữ gìn trật tự, đóng cửa lên xuống của xe trước và trong khi xe chạy.",
+                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe sau khi khởi hành; có trách nhiệm lái xe thật nhanh.",
+                                     choiceB: "B. Kiểm tra các điều kiện bảo đảm an toàn của xe trước khi khởi hành.",
+                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách đi xe, giữ gìn trật tự.",
                                      choiceD: "D. Cả ý 2 và ý 3.",
                                      answer: 4))
                 list.append(Question(questionText: "Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
@@ -802,7 +802,7 @@ class QuestionBank {
                 list.append(Question(questionText: "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
                                      choiceA: "A. Bị nghiêm cấm.",
                                      choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu có chất ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
+                                     choiceC: "C. Nếu có ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
                 list.append(Question(questionText: "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
@@ -871,12 +871,6 @@ class QuestionBank {
                                      choiceC: "C. Được phép tùy từng trường hợp.",
                                      choiceD: "D. Phải đăng ký với cơ quan địa phương.",
                                      answer: 2))
-                list.append(Question(questionText: "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
-                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.",
-                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.",
-                                     choiceC: "C. Cả ý 1 và ý 2.",
-                                     choiceD: "D. Tất cả đều sai.",
-                                     answer: 1))
                 list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
                                      choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
                                      choiceB: "B. Không được dừng xe, đỗ xe.",
@@ -910,7 +904,7 @@ class QuestionBank {
                                      answer: 2))
                 list.append(Question(questionText: "“Làn đường” là gì?",
                                      choiceA: "A. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy.",
-                                     choiceB: "B. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.",
+                                     choiceB: "B. Là một phần của phần đường có bề rộng đủ cho xe chạy an toàn.",
                                      choiceC: "C. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn.",
                                      choiceD: "D. Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho người đi bộ",
                                      answer: 2))
@@ -921,7 +915,7 @@ class QuestionBank {
                                      choiceD: "D. Giới hạn về chiều cao của cầu, đường.",
                                      answer: 2))
                 list.append(Question(questionText: "Khái niệm “dải phân cách” được hiểu như thế nào là đúng?",
-                                     choiceA: "A. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ.",
+                                     choiceA: "A. Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt.",
                                      choiceB: "B. Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.",
                                      choiceC: "C. Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông.",
                                      choiceD: "D. Là làn đường phân chia mặt đường cho người đi bộ.",
@@ -978,15 +972,15 @@ class QuestionBank {
                 
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
-                                     choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển.",
-                                     choiceB: "B.  hi vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải được chủ hàng cho phép.",
+                                     choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
+                                     choiceB: "B. Vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm phải được chủ hàng cho phép.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
                 list.append(Question(questionText: "Người lái xe và nhân viên phục vụ trên xe ô tô vận tải hành khách phải có những trách nhiệm gì theo quy định dưới đây?",
-                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe sau khi khởi hành; có trách nhiệm lái xe thật nhanh khi chậm giờ của khách.",
-                                     choiceB: "B. Kiểm tra các điều kiện bảo đảm an toàn của xe trước khi khởi hành; có thái độ văn minh, lịch sự, hướng dẫn hành khách ngồi đúng nơi quy định.",
-                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách đi xe, giữ gìn trật tự, đóng cửa lên xuống của xe trước và trong khi xe chạy.",
+                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe sau khi khởi hành.",
+                                     choiceB: "B. Kiểm tra các điều kiện bảo đảm an toàn của xe; có thái độ văn minh, lịch sự, hướng dẫn hành khách.",
+                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách đi xe, giữ gìn trật tự.",
                                      choiceD: "D. Cả ý 2 và ý 3.",
                                      answer: 4))
                 list.append(Question(questionText: "Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
@@ -1127,12 +1121,6 @@ class QuestionBank {
                                      choiceC: "C. Tùy từng trường hợp.",
                                      choiceD: "D. Được phép với ô tô tải.",
                                      answer: 2))
-                list.append(Question(questionText: "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
-                                     choiceA: "A. Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.",
-                                     choiceB: "B. Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.",
-                                     choiceC: "C. Cả ý 1 và ý 2.",
-                                     choiceD: "D. Tất cả đều sai.",
-                                     answer: 1))
                 list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
                                      choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
                                      choiceB: "B. Không được dừng xe, đỗ xe.",
@@ -1264,8 +1252,8 @@ class QuestionBank {
                                      choiceD: "D. Cả ý 1 và ý 2.",
                                      answer: 1))
                 list.append(Question(questionText: "Khi xảy ra tai nạn giao thông, có người bị thương nghiêm trọng, người lái xe và người có mặt tại hiện trường vụ tai nạn phải thực hiện các công việc gì dưới đây?",
-                                     choiceA: "A. Thực hiện sơ cứu ban đầu trong trường hợp khẩn cấp; thông báo vụ tai nạn đến cơ quan thi hành pháp luật.",
-                                     choiceB: "B. Nhanh chóng lái xe gây tai nạn hoặc đi nhờ xe khác ra khỏi hiện trường vụ tai nạn.",
+                                     choiceA: "A. Thực hiện sơ cứu ban đầu; thông báo vụ tai nạn đến cơ quan thi hành pháp luật.",
+                                     choiceB: "B. Nhanh chóng lái xe gây tai nạn ra khỏi hiện trường vụ tai nạn.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
@@ -1277,7 +1265,7 @@ class QuestionBank {
                 list.append(Question(questionText: "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma tuý có bị nghiêm cấm hay không?",
                                      choiceA: "A. Bị nghiêm cấm.",
                                      choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu có chất ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
+                                     choiceC: "C. Nếu có ma tuý ở mức nhẹ, có thể điều khiển phương tiện.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
                 list.append(Question(questionText: "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
@@ -1289,7 +1277,7 @@ class QuestionBank {
                 list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
                                      choiceA: "A. Bị nghiêm cấm.",
                                      choiceB: "B. Không bị nghiêm cấm.",
-                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceC: "C. Nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện giao thông.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
                 list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
@@ -1363,39 +1351,39 @@ class QuestionBank {
                 
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
-                                     choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển.",
-                                     choiceB: "B.  hi vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải được chủ hàng cho phép.",
+                                     choiceA: "A. Thực hiện nghiêm chỉnh nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
+                                     choiceB: "B. Khi vận chuyển hàng quá khổ, quá tải, nguy hiểm phải được chủ hàng cho phép.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
                 list.append(Question(questionText: "Người lái xe và nhân viên phục vụ trên xe ô tô vận tải hành khách phải có những trách nhiệm gì theo quy định dưới đây?",
-                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe sau khi khởi hành; có trách nhiệm lái xe thật nhanh khi chậm giờ của khách.",
-                                     choiceB: "B. Kiểm tra các điều kiện bảo đảm an toàn của xe trước khi khởi hành; có thái độ văn minh, lịch sự, hướng dẫn hành khách ngồi đúng nơi quy định.",
-                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, sức khỏe, tài sản của hành khách đi xe, giữ gìn trật tự, đóng cửa lên xuống của xe trước và trong khi xe chạy.",
+                                     choiceA: "A. Kiểm tra các điều kiện bảo đảm an toàn của xe; có trách nhiệm lái xe thật nhanh.",
+                                     choiceB: "B. Kiểm tra các điều kiện an toàn của xe trước khi khởi hành; có thái độ lịch sự.",
+                                     choiceC: "C. Có biện pháp bảo vệ tính mạng, tài sản, giữ gìn trật tự trước và trong khi xe chạy.",
                                      choiceD: "D. Cả ý 2 và ý 3.",
                                      answer: 4))
                 list.append(Question(questionText: "Khái niệm về văn hóa giao thông được hiểu như thế nào là đúng?",
-                                     choiceA: "A. Là sự hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông; là ý thức trách nhiệm với cộng đồng khi tham gia giao thông.",
-                                     choiceB: "B. Là ứng xử có văn hóa, có tình yêu thương con người trong các tình huống không may xảy ra khi tham gia giao thông.",
+                                     choiceA: "A. Là sự hiểu biết và chấp hành nghiêm chỉnh pháp luật về giao thông.",
+                                     choiceB: "B. Là ứng xử có văn hóa, có tình thương người trong các tình huống không may.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
                 list.append(Question(questionText: "Người lái xe có văn hóa khi tham gia giao thông phải đáp ứng các điều kiện nào dưới đây?",
-                                     choiceA: "A. Có trách nhiệm với bản thân và với cộng đồng; tôn trọng, nhường nhịn người khác.",
-                                     choiceB: "B. Tận tình giúp đỡ người tham gia giao thông gặp hoạn nạn; giúp đỡ người khuyết tật, trẻ em và người cao tuổi.",
+                                     choiceA: "A. Có trách nhiệm với bản thân và với cộng đồng; tôn trọng, người khác.",
+                                     choiceB: "B. Tận tình giúp đỡ người khuyết tật, trẻ em và người cao tuổi.",
                                      choiceC: "C. Cả ý 1 và ý 2.",
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
                 list.append(Question(questionText: "Người có văn hóa giao thông khi điều khiển xe cơ giới tham gia giao thông đường bộ phải đảm bảo các điều kiện gì dưới đây?",
-                                     choiceA: "A. Có giấy phép lái xe phù hợp với loại xe được phép điều khiển; xe cơ giới đảm bảo các quy định về chất lượng.",
-                                     choiceB: "B. Có giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe cơ giới còn hiệu lực.",
+                                     choiceA: "A. Có giấy phép lái xe phù hợp với loại xe được phép điều khiển; đảm bảo chất lượng.",
+                                     choiceB: "B. Có giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe còn hiệu lực.",
                                      choiceC: "C. Nộp phí sử dụng đường bộ theo quy định.",
                                      choiceD: "D. Tất cả đáp án trên.",
                                      answer: 4))
                 list.append(Question(questionText: "Khi xảy ra tai nạn giao thông, người lái xe và người có mặt tại hiện trường vụ tai nạn phải thực hiện các công việc gì dưới đây?",
-                                     choiceA: "A. Đặt các biển cảnh báo hoặc vật báo hiệu ở phía trước và phía sau hiện trường xảy ra tai nạn để cảnh báo.",
-                                     choiceB: "B. Kiểm tra khả năng xảy ra hỏa hoạn do nhiên liệu bị rò rỉ; bảo vệ hiện trường vụ tai nạn và cấp cứu người bị thương.",
-                                     choiceC: "C. Đặt các biển cảnh báo hoặc vật báo hiệu ở phía trên nóc xe xảy ra tai nạn để cảnh báo.",
+                                     choiceA: "A. Đặt các biển cảnh báo ở phía trước và sau hiện trường xảy ra tai nạn để cảnh báo.",
+                                     choiceB: "B. Kiểm tra khả năng hỏa hoạn; bảo vệ hiện trường tai nạn, cấp cứu người bị thương.",
+                                     choiceC: "C. Đặt các biển cảnh báo hoặc vật báo hiệu ở phía trên nóc xe xảy ra tai nạn.",
                                      choiceD: "D. Cả ý 1 và ý 2.",
                                      answer: 1))
                 list.append(Question(questionText: "Khi xảy ra tai nạn giao thông, những hành vi nào dưới đây bị nghiêm cấm?",
