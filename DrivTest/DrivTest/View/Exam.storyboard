@@ -315,7 +315,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIZ-QO-Z1N">
                                 <rect key="frame" x="41.333333333333343" y="104" width="331.33333333333326" height="579"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj1-Uj-zEc">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xj1-Uj-zEc">
                                         <rect key="frame" x="0.0" y="0.0" width="331.33333333333331" height="23"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                                         <nil key="textColor"/>
@@ -367,6 +367,7 @@
                         <outlet property="finishBtn" destination="hcT-X9-Wv6" id="AqX-MP-bFE"/>
                         <outlet property="imageQuestion" destination="PSx-jC-YzT" id="oWj-lf-uP4"/>
                         <outlet property="listAnserView" destination="6OS-Kz-obP" id="F0M-7w-hvG"/>
+                        <outlet property="numericQuestionTxt" destination="rnK-9M-52p" id="AM1-os-1uP"/>
                         <outlet property="questionTxt" destination="Xj1-Uj-zEc" id="RuD-iu-CfW"/>
                     </connections>
                 </viewController>
