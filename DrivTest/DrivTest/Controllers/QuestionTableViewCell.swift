@@ -9,6 +9,8 @@
 import UIKit
 
 class QuestionTableViewCell: UITableViewCell {
+    var parentDelegate: ParentControllerDelegate?
+    
     @IBOutlet var numAnswerTxt: UILabel!
     
     @IBOutlet var answerTxt: UILabel!

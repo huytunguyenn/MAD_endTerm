@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class Bank_ExamA1 {
+    
+}

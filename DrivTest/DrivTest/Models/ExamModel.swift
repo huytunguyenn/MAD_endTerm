@@ -14,6 +14,7 @@ struct ExamQuestion{
     var isParalysis: Bool = false
     var isImage: Bool = false
     var selected: Int = -1
+    var correctAswer: Int = -2
     
 }
 
@@ -22,7 +23,7 @@ class ExamA1{
     var numExam: Int = 0
     var amountQuestion: Int = 0
     var listQuestion = [ExamQuestion]()
-    init (listNumericalQuestion: [(subType: Int, number: Int)]){
+    init (listNumericalQuestion: [(subType: Int, number: Int)], num_Exem: Int){
         let list_question_diemliet = QuestionBank(type: 0,subtype: 0).list
         let list_question_khainiem = QuestionBank(type: 0, subtype: 1).list
         let list_question_bienbao = QuestionBank(type: 0, subtype: 2).list
@@ -33,11 +34,15 @@ class ExamA1{
             if (num.subType == 0 ){
                 temp.isParalysis =  true
                 let tempQ = list_question_diemliet[num.number]
+                print(tempQ.optionA)
                 temp.textQ = tempQ
+                temp.correctAswer = tempQ.correctAnswer
             }
             else if (num.subType == 1){
                 let tempQ = list_question_khainiem[num.number]
                 temp.textQ = tempQ
+                temp.correctAswer = tempQ.correctAnswer
+
                 
             }
             else if (num.subType == 2){
@@ -49,6 +54,7 @@ class ExamA1{
             else if (num.subType == 3){
                 let tempQ = list_question_giaoduc[num.number]
                 temp.textQ = tempQ
+                temp.correctAswer = tempQ.correctAnswer
                 
             }
             else if (num.subType == 4){
@@ -56,7 +62,10 @@ class ExamA1{
                  let tempQ = list_question_sahinh[num.number]
                  //temp.imageQ = tempQ
             }
+            listQuestion.append(temp)
         }
+        amountQuestion = listQuestion.count
+        numExam = num_Exem
     }
     
     
