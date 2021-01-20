@@ -15,6 +15,7 @@ struct ExamQuestion{
     var isImage: Bool = false
     var selected: Int = -1
     var correctAswer: Int = -2
+    var question: String = ""
     
 }
 
@@ -37,17 +38,19 @@ class ExamA1{
                 print(tempQ.optionA)
                 temp.textQ = tempQ
                 temp.correctAswer = tempQ.correctAnswer
+                temp.question = tempQ.question
             }
             else if (num.subType == 1){
                 let tempQ = list_question_khainiem[num.number]
                 temp.textQ = tempQ
                 temp.correctAswer = tempQ.correctAnswer
+                temp.question = tempQ.question
 
                 
             }
             else if (num.subType == 2){
                 temp.isImage = true
-                let tempQ = list_question_bienbao[num.number]
+             //   let tempQ = list_question_bienbao[num.number]
                 //temp.imageQ = tempQ
                 
             }
@@ -55,14 +58,17 @@ class ExamA1{
                 let tempQ = list_question_giaoduc[num.number]
                 temp.textQ = tempQ
                 temp.correctAswer = tempQ.correctAnswer
-                
+                temp.question = tempQ.question
+
             }
             else if (num.subType == 4){
                 temp.isImage = true
-                 let tempQ = list_question_sahinh[num.number]
+                // let tempQ = list_question_sahinh[num.number]
                  //temp.imageQ = tempQ
             }
-            listQuestion.append(temp)
+            if (num.subType != 2 && num.subType != 4){
+                listQuestion.append(temp)
+            }
         }
         amountQuestion = listQuestion.count
         numExam = num_Exem

@@ -16,6 +16,7 @@ protocol ParentControllerDelegate{
 
 class ListQuestionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet var numericQuestionTxt: UILabel!
     
     @IBOutlet var finishBtn: UIButton!
     
@@ -30,7 +31,8 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     //---------------------------------- data
     
     var numTest: Int = 0
-    var exam = ExamA1(listNumericalQuestion: [(subType: 0, number: 0), (subType: 0, number: 1)], num_Exem: 1) // chuoi cau hoi
+    //var exam = ExamA1(listNumericalQuestion: [(subType: 0, number: 0), (subType: 0, number: 1)], num_Exem: 1) // chuoi cau hoi
+    var exam = Bank_ExamA1().listExam[0]
     var presentQuestion: Int = 0 //cau hoi hien tai
     var isfinshed: Bool = false
     
@@ -50,7 +52,18 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
         else{
             imageQuestion.heightAnchor.constraint(equalToConstant: CGFloat(0)).isActive = true
         }
+        
+        if (exam.listQuestion[0].isImage == false){
+            questionTxt.text = exam.listQuestion[0].textQ?.question
+        }else{
+            questionTxt.text = exam.listQuestion[0].imageQ?.question
+        }
 
+        questionTxt.text = exam.listQuestion[0].question
+        print (exam.amountQuestion)
+        
+        var templable = "Câu 1/" + String(exam.amountQuestion)
+        numericQuestionTxt.text = templable
 
         // Do any additional setup after loading the view.
     }
@@ -61,7 +74,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = listAnserView.dequeueReusableCell(withIdentifier: "QuestionTableViewCell") as! QuestionTableViewCell
-        print("*****************************")
+        //print("*****************************")
         if (indexPath.row == 0){
             cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
         }
@@ -74,7 +87,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
         else if (indexPath.row == 3){
             cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
         }
-        print(exam.listQuestion[presentQuestion].selected)
+        //print(exam.listQuestion[presentQuestion].selected)
         if (exam.listQuestion[presentQuestion].selected == -1){
             cell.layer.backgroundColor = UIColor.white.cgColor
         }
@@ -99,7 +112,9 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func previousClick(_ sender: Any) {
         if (presentQuestion > 0){
             presentQuestion -= 1
-            print(presentQuestion)
+            questionTxt.text = exam.listQuestion[presentQuestion].question
+            numericQuestionTxt.text = String(presentQuestion + 1) + "/" + String(exam.amountQuestion)
+            //print(presentQuestion)
             for count in 0..<4{
                 let indexPath = IndexPath(row: count, section: 0)
                 let cell = listAnserView.cellForRow(at: indexPath) as! QuestionTableViewCell
@@ -107,7 +122,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                 if (indexPath.row == 0){
                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionA
                     //cell.layer.backgroundColor = UIColor.black.cgColor
-                       print(exam.listQuestion[presentQuestion].textQ?.optionA)
+                       //print(exam.listQuestion[presentQuestion].textQ?.optionA)
                 }
                 else if (indexPath.row == 1){
                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionB
@@ -138,6 +153,8 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     @IBAction func nextClick(_ sender: Any) {
         if (presentQuestion < exam.amountQuestion - 1){
             presentQuestion += 1
+            questionTxt.text = exam.listQuestion[presentQuestion].question
+            numericQuestionTxt.text = String(presentQuestion + 1) + "/" + String(exam.amountQuestion)
             print(presentQuestion)
             for count in 0..<4{
                 let indexPath = IndexPath(row: count, section: 0)
@@ -241,6 +258,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if (isfinshed == false){
             exam.listQuestion[presentQuestion].selected = indexPath.row
+            print (exam.listQuestion[presentQuestion].textQ?.optionA)
              for count in 0..<4{
                  let indexCount = IndexPath(row: count, section: 0)
                  let cell = listAnserView.cellForRow(at: indexCount) as! QuestionTableViewCell
