@@ -1,20 +1,30 @@
 PODS:
   - paper-onboarding (6.1.5)
+  - Realm (10.5.1):
+    - Realm/Headers (= 10.5.1)
+  - Realm/Headers (10.5.1)
+  - RealmSwift (10.5.1):
+    - Realm (= 10.5.1)
   - youtube-ios-player-helper (1.0.2)
 
 DEPENDENCIES:
   - paper-onboarding
+  - RealmSwift
   - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
     - paper-onboarding
+    - Realm
+    - RealmSwift
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   paper-onboarding: fede1799b1da6988f3788e3b71654583c6f3bce1
+  Realm: 77fcb4e0b9f2963ea06f584749a0d7dc9cab95e1
+  RealmSwift: 6abe6aa6cd8b70cc1a87afcb9232cabea74ff1ac
   youtube-ios-player-helper: 40b96e52c22445f0fdc43731cefa32c67075ff81
 
-PODFILE CHECKSUM: 9132ec8351348858e807f8d402dd8e13d05adc50
+PODFILE CHECKSUM: b4657bafeaf558e7759916c9f60f02fd9f45bd65
 
 COCOAPODS: 1.10.1
