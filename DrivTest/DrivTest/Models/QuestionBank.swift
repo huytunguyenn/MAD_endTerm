@@ -224,7 +224,102 @@ class QuestionBank {
                                      answer: 4))
                 
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người hành nghề lái xe khi thực hiện tốt việc rèn luyện, nâng cao trách nhiệm, đạo đức nghề nghiệp sẽ thu được kết quả như thế nào dưới đây?",
                                      choiceA: "A. Được khách hàng, xã hội tôn trọng; được đồng nghiệp quý mến, giúp đỡ; được doanh nghiệp tin dùng và đóng góp nhiều cho xã hội.",
@@ -306,7 +401,102 @@ class QuestionBank {
                                      answer: 4))
                 
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+               list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
             
         }else if(type == 1){ // =============================================================== bang A2
@@ -475,7 +665,102 @@ class QuestionBank {
                                      choiceD: "D. Không hạn chế tùy thuộc vào sức khỏe và khả năng của người lái xe.",
                                      answer: 4))
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người hành nghề lái xe khi thực hiện tốt việc rèn luyện, nâng cao trách nhiệm, đạo đức nghề nghiệp sẽ thu được kết quả như thế nào dưới đây?",
                                      choiceA: "A. Được khách hàng, xã hội tôn trọng; được đồng nghiệp quý mến, giúp đỡ; được doanh nghiệp tin dùng và đóng góp nhiều cho xã hội.",
@@ -556,7 +841,102 @@ class QuestionBank {
                                      choiceD: "D. Tất cả các ý nêu trên.",
                                      answer: 4))
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
             
         }else if(type == 2){ // =============================================================== bang B1
@@ -713,7 +1093,102 @@ class QuestionBank {
                                      choiceD: "D. Không hạn chế tùy thuộc vào sức khỏe và khả năng của người lái xe.",
                                      answer: 4))
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
                                      choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
@@ -788,7 +1263,102 @@ class QuestionBank {
                                      choiceD: "D. Tất cả các ý nêu trên.",
                                      answer: 4))
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
             
         }else if(type == 3){ // =============================================================== bang B2
@@ -969,7 +1539,102 @@ class QuestionBank {
                                      choiceD: "D. Không hạn chế tùy thuộc vào sức khỏe và khả năng của người lái xe.",
                                      answer: 4))
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
                                      choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
@@ -1038,7 +1703,102 @@ class QuestionBank {
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
             
         }else if(type == 4){ // =============================================================== bang C
@@ -1201,7 +1961,102 @@ class QuestionBank {
                                      choiceD: "D. Liên tục tùy thuộc vào sức khỏe và khả năng của người lái xe.",
                                      answer: 1))
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
                                      choiceA: "A. Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển.",
@@ -1258,7 +2113,102 @@ class QuestionBank {
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 1))
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
         }else if(type == 5){ // =============================================================== bang F
             if(subtype == 0){ // cau hoi diem liet
@@ -1348,7 +2298,102 @@ class QuestionBank {
                                      choiceD: "D. Tẩt cả đều sai.",
                                      answer: 4))
             }else if(subtype == 2){ // --------------------------------------------------------------------------------------------------- he thong bien bao
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }else if(subtype == 3){ // --------------------------------------------------------------------------------------------------- van hoa dao duc
                 list.append(Question(questionText: "Người lái xe vận tải hàng hóa cần thực hiện những nhiệm vụ gì ghi ở dưới đây?",
                                      choiceA: "A. Thực hiện nghiêm chỉnh nội dung hợp đồng giữa chủ phương tiện với chủ hàng.",
@@ -1393,7 +2438,102 @@ class QuestionBank {
                                      choiceD: "D. Tất cả đều sai.",
                                      answer: 3))
             }else if(subtype == 4){ // --------------------------------------------------------------------------------------------------- cau hoi sa hinh
-                
+                list.append(Question(questionText: "Hành vi nào dưới đây bị nghiêm cấm?",
+                                     choiceA: "A. Đỗ xe trên đường phố.",
+                                     choiceB: "B. Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.",
+                                     choiceC: "C. Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.",
+                                     choiceD: "D. Sử dụng còi và quay đầu xe trong khu dân cư.",
+                                     answer: 3))
+                list.append(Question(questionText: "Người điều khiển xe môtô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+                                     choiceA: "A. Bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+                                     choiceA: "A. Chỉ bị nhắc nhở.",
+                                     choiceB: "B. Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.",
+                                     choiceC: "C. Không bị xử lý hình sự.",
+                                     choiceD: "D. Lập biên bản",
+                                     answer: 2))
+                list.append(Question(questionText: "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+                                     choiceA: "A. Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.",
+                                     choiceB: "B. Người ngồi phía sau người điều khiển xe cơ giới.",
+                                     choiceC: "C. Người đi bộ.",
+                                     choiceD: "D. Cả ý 1 và ý 2",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+                                     choiceA: "A. Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tuỳ từng trường hợp.",
+                                     choiceD: "D. Chỉ được phép thực hiện với thành viên trong gia đình.",
+                                     answer: 2))
+                list.append(Question(questionText: "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Bị nghiêm cấm tuỳ từng trường hợp.",
+                                     choiceB: "B. Không bị nghiêm cấm.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+                                     choiceA: "A. Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.",
+                                     choiceB: "B. Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.",
+                                     choiceC: "C. Không vượt quá tốc độ cho phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+                                     choiceA: "A. Đi về phía bên trái.",
+                                     choiceB: "B. Đi về phía bên phải.",
+                                     choiceC: "C. Đi ở giữa.",
+                                     choiceD: "D. Đi trên lề đường.",
+                                     answer: 2))
+                list.append(Question(questionText: "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+                                     choiceA: "A. Đi ở làn bên phải trong cùng.",
+                                     choiceB: "B. Đi ở làn phía bên trái.",
+                                     choiceC: "C. Đi ở làn giữa.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 1))
+                list.append(Question(questionText: "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+                                     choiceA: "A. Không bị nghiêm cấm.",
+                                     choiceB: "B. Không bị nghiêm cấm khi rất vội.",
+                                     choiceC: "C. Bị nghiêm cấm.",
+                                     choiceD: "D. Chưa có quy định.",
+                                     answer: 3))
+                list.append(Question(questionText: "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Được phép tùy từng trường hợp.",
+                                     choiceD: "D. Phải đăng ký với cơ quan địa phương.",
+                                     answer: 2))
+                list.append(Question(questionText: "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+                                     choiceA: "A. Được phép sản xuất, sử dụng khi bị mất biển số.",
+                                     choiceB: "B. Được phép mua bán, sử dụng khi bị mất biển số.",
+                                     choiceC: "C. Nghiêm cấm sản xuất, mua bán, sử dụng trái phép.",
+                                     choiceD: "D. Tất cả đều sai.",
+                                     answer: 3))
+                list.append(Question(questionText: "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Không được phép.",
+                                     choiceC: "C. Tùy từng trường hợp.",
+                                     choiceD: "D. Được phép với ô tô tải.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+                                     choiceA: "A. Được dừng xe, đỗ xe trong trường hợp cần thiết.",
+                                     choiceB: "B. Không được dừng xe, đỗ xe.",
+                                     choiceC: "C. Được dừng xe, không được đỗ xe.",
+                                     choiceD: "D. Cả ý 1 và ý 2.",
+                                     answer: 2))
+                list.append(Question(questionText: "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.",
+                                     choiceC: "C. Tuỳ trường hợp.",
+                                     choiceD: "D. Không được phép.",
+                                     answer: 4))
+                list.append(Question(questionText: "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+                                     choiceA: "A. Được phép.",
+                                     choiceB: "B. Tuỳ trường hợp.",
+                                     choiceC: "C. Không được phép.",
+                                     choiceD: "D. Được phép với người khuyết tật.",
+                                     answer: 3))
             }
             
         }

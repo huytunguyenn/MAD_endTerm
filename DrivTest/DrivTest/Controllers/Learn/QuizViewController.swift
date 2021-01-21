@@ -8,11 +8,13 @@
 
 import UIKit
 
-class QuizViewController: UIViewController {
-    
-    // type variables
-    var type: Int = -1; // license type (A1,A2,B1,B2,C,F)
-    var subtype: Int = -1; // question type (cauhoidiemliet,khainiemquytac,hethongbienbao,vanhoadaoduc,cauhoisahinh)
+
+protocol delegateProtocol : class{
+    func Method(backnum: Int)
+}
+
+
+class QuizViewController: UIViewController, delegateProtocol {
     
     //outlets
     @IBOutlet weak var questionCounter: UILabel!
@@ -25,6 +27,11 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var dButton: UIButton!
     @IBOutlet weak var nextButton: UIButton!
     
+    
+    // type variables
+    var type: Int = -1; // license type (A1,A2,B1,B2,C,F)
+    var subtype: Int = -1; // question type (cauhoidiemliet,khainiemquytac,hethongbienbao,vanhoadaoduc,cauhoisahinh)
+  
     // init list of questions
     lazy var allQuestions = QuestionBank(type: type,subtype: subtype)
     
@@ -34,8 +41,17 @@ class QuizViewController: UIViewController {
     var selectedAnswer:Int = 0
     var hasWrong:Bool = false
     
+    // for choose quiz VC to know which question was answered correctly
+    var correctArr = [String]()
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // init array
+        for _ in 0 ..< allQuestions.list.count {
+            correctArr.append("greybg")
+        }
         
         // center text in answer button
         aButton.titleLabel!.textAlignment = .center
@@ -92,10 +108,35 @@ class QuizViewController: UIViewController {
         
     }
     
+    // delegate
+    func Method(backnum: Int) {
+        // change question to the question user choose in chooseQuizVC
+        questionNumber = backnum
+        
+        normalizeButton()
+        updateQuestion()
+        updateUI()
+   
+    }
     
+    // tap '?' button
+    @IBAction func chooseQuestionButtonTapped(_ sender: Any) {
+        // go to chooseQuestionVC
+        let dest = storyboard?.instantiateViewController(identifier: "ChooseQuizViewController") as! ChooseQuizViewController
+        dest.delegate = self
+        
+        dest.correctArr = correctArr
+        
+        self.present(dest, animated: true, completion: nil)
+        
+    }
+    
+    // tap answer button
     @IBAction func answerPressed(_ sender: UIButton) {
         normalizeButton()
         if (sender.tag == selectedAnswer) { // corrected answer
+            // question was correct
+            correctArr[questionNumber] = "greenbg"
             if (hasWrong == false){
                 // increase score
                 score += 1
@@ -112,9 +153,9 @@ class QuizViewController: UIViewController {
             
             hasWrong = true
         }
-        
-        
     }
+    
+    
     
     // tap '->' button
     @IBAction func nextButtonTapped(_ sender: Any) {
@@ -182,9 +223,16 @@ class QuizViewController: UIViewController {
     
     // update progress view, question counter, score
     func updateUI(){
-        scoreLabel.text = "Số câu đúng: \(score)"
+        scoreLabel.text = "Đúng lần đầu: \(score)"
         questionCounter.text = "\(questionNumber + 1)/\(allQuestions.list.count)"
-        progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(questionNumber + 1)
+        //
+        var progressNum:Int = 0
+        for index in correctArr{
+            if(index == "greenbg"){
+                progressNum += 1
+            }
+        }
+        progressView.frame.size.width = (view.frame.size.width / CGFloat(allQuestions.list.count)) * CGFloat(progressNum)
     }
     
 

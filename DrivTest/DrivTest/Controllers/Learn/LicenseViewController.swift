@@ -20,7 +20,6 @@ class LicenseViewController: UIViewController {
     
     var type: Int = -1; // license type (A1,A2,B1,B2,C,F)
     
-    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var titleLabelImageView: UIImageView!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     

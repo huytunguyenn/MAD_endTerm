@@ -22,6 +22,8 @@
 		2D92653C258CB54D004C091F /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D92653B258CB54D004C091F /* LearnViewController.swift */; };
 		2D926546258CDD76004C091F /* catagoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D926545258CDD76004C091F /* catagoryCollectionViewCell.swift */; };
 		2D95450925B68177005B93B5 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D95450825B68177005B93B5 /* QuizViewController.swift */; };
+		2DAD2D9A25B98C1500939B41 /* ChooseQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2D9925B98C1500939B41 /* ChooseQuizViewController.swift */; };
+		2DAD2D9C25B9A5B800939B41 /* chooseQuizCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD2D9B25B9A5B800939B41 /* chooseQuizCollectionViewCell.swift */; };
 		2DBF2853258A18BC009F26EE /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DBF2852258A18BC009F26EE /* SignUp.storyboard */; };
 		2DBF2855258A1918009F26EE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF2854258A1918009F26EE /* SignUpViewController.swift */; };
 		2DBF2859258A1EFA009F26EE /* RoundedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBF2858258A1EFA009F26EE /* RoundedTabBarController.swift */; };
@@ -65,6 +67,8 @@
 		2D92653B258CB54D004C091F /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		2D926545258CDD76004C091F /* catagoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catagoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		2D95450825B68177005B93B5 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2DAD2D9925B98C1500939B41 /* ChooseQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseQuizViewController.swift; sourceTree = "<group>"; };
+		2DAD2D9B25B9A5B800939B41 /* chooseQuizCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseQuizCollectionViewCell.swift; sourceTree = "<group>"; };
 		2DBF2852258A18BC009F26EE /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		2DBF2854258A1918009F26EE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		2DBF2858258A1EFA009F26EE /* RoundedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTabBarController.swift; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 				ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */,
 				2DD7DA6425B89C17008523EB /* ExitPopUpViewController.swift */,
 				2DD7DA6625B8A6E7008523EB /* FinishQuizViewController.swift */,
+				2DAD2D9925B98C1500939B41 /* ChooseQuizViewController.swift */,
+				2DAD2D9B25B9A5B800939B41 /* chooseQuizCollectionViewCell.swift */,
 			);
 			path = Learn;
 			sourceTree = "<group>";
@@ -365,6 +371,7 @@
 				A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */,
 				2D926546258CDD76004C091F /* catagoryCollectionViewCell.swift in Sources */,
 				A417FB0025B6ABE50007B4E9 /* ListExamViewController.swift in Sources */,
+				2DAD2D9C25B9A5B800939B41 /* chooseQuizCollectionViewCell.swift in Sources */,
 				2D0BC592258837A3000E5504 /* AppDelegate.swift in Sources */,
 				A417FAFE25B6ABC30007B4E9 /* MainExamViewController.swift in Sources */,
 				A417FB0225B6ABF80007B4E9 /* ListQuestionViewController.swift in Sources */,
@@ -376,6 +383,7 @@
 				A41B005225B8C30E005FD1EC /* ListQuestionFinalViewController.swift in Sources */,
 				A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */,
 				A417FB0425B6AC170007B4E9 /* ExamCollectionViewCell.swift in Sources */,
+				2DAD2D9A25B98C1500939B41 /* ChooseQuizViewController.swift in Sources */,
 				2D7E0E852588BBA600A92ABD /* OnBoarding_Images.swift in Sources */,
 				2DC04B1025B6CCE10010424F /* QuestionBank.swift in Sources */,
 				2D7E0E7B2588A8D300A92ABD /* SignInViewController.swift in Sources */,
