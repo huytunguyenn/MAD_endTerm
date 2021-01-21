@@ -132,17 +132,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-iG-3ca">
-                                <rect key="frame" x="309" y="79" width="57" height="57"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="Rzj-dA-lJf"/>
-                                    <constraint firstAttribute="height" constant="57" id="Y4Y-wL-CWC"/>
-                                </constraints>
-                                <state key="normal" title="Back" image="exitbutton"/>
-                                <connections>
-                                    <action selector="backButtonTapped:" destination="dVZ-pk-8Xy" eventType="touchUpInside" id="Ysr-t4-0Vz"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iRV-1u-VhT">
                                 <rect key="frame" x="48" y="79" width="159" height="58"/>
                                 <constraints>
@@ -197,14 +186,25 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9I-49-Nxv">
+                                <rect key="frame" x="314" y="79" width="57" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="Hoz-zF-IWz"/>
+                                    <constraint firstAttribute="width" constant="57" id="oy3-fc-U71"/>
+                                </constraints>
+                                <state key="normal" image="exitbutton"/>
+                                <connections>
+                                    <segue destination="Yxi-1B-zOL" kind="presentation" modalPresentationStyle="fullScreen" id="vYG-XK-ekG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="a31-06-KYR" firstAttribute="leading" secondItem="7QC-GT-YS5" secondAttribute="leading" id="0d5-1b-l36"/>
                             <constraint firstItem="iRV-1u-VhT" firstAttribute="leading" secondItem="7QC-GT-YS5" secondAttribute="leading" constant="48" id="3Iz-ru-GLp"/>
-                            <constraint firstItem="GAf-iG-3ca" firstAttribute="top" secondItem="7QC-GT-YS5" secondAttribute="top" constant="35" id="JB7-cb-Jta"/>
-                            <constraint firstItem="7QC-GT-YS5" firstAttribute="trailing" secondItem="GAf-iG-3ca" secondAttribute="trailing" constant="48" id="Vxd-0A-i9X"/>
+                            <constraint firstItem="7QC-GT-YS5" firstAttribute="trailing" secondItem="h9I-49-Nxv" secondAttribute="trailing" constant="43" id="UN7-zS-jYJ"/>
                             <constraint firstItem="a31-06-KYR" firstAttribute="top" secondItem="iRV-1u-VhT" secondAttribute="bottom" constant="64" id="dlH-dG-uHi"/>
+                            <constraint firstItem="h9I-49-Nxv" firstAttribute="top" secondItem="7QC-GT-YS5" secondAttribute="top" constant="35" id="hMZ-GG-l5C"/>
                             <constraint firstItem="7QC-GT-YS5" firstAttribute="trailing" secondItem="a31-06-KYR" secondAttribute="trailing" id="lXh-Ns-cyt"/>
                             <constraint firstItem="iRV-1u-VhT" firstAttribute="top" secondItem="7QC-GT-YS5" secondAttribute="top" constant="35" id="oag-sO-PBG"/>
                             <constraint firstItem="a31-06-KYR" firstAttribute="bottom" secondItem="7QC-GT-YS5" secondAttribute="bottom" id="qaq-hV-s33"/>
@@ -212,7 +212,6 @@
                         <viewLayoutGuide key="safeArea" id="7QC-GT-YS5"/>
                     </view>
                     <connections>
-                        <outlet property="backButton" destination="GAf-iG-3ca" id="R5i-FN-QMb"/>
                         <outlet property="categoryCollectionView" destination="a31-06-KYR" id="lTU-TP-XqH"/>
                         <outlet property="titleLabelImageView" destination="iRV-1u-VhT" id="cXk-Nn-O3b"/>
                     </connections>
@@ -271,6 +270,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ZQ-OJ-Vbx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="-417"/>
+        </scene>
+        <!--Tabbar-->
+        <scene sceneID="flr-Rw-Toi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tabbar" id="Yxi-1B-zOL" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GSf-tg-cvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="823" y="-245"/>
         </scene>
         <!--Quiz View Controller-->
         <scene sceneID="N31-tY-7Un">

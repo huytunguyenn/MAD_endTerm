@@ -39,9 +39,9 @@ class LearnViewController: UIViewController {
     // layout for collection view
     var layout = UICollectionViewLayout()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // set up for catagory view
         catagoryCollectionView.dataSource = self
@@ -103,3 +103,5 @@ extension LearnViewController : UICollectionViewDelegate, UICollectionViewDataSo
     
     
 }
+
+

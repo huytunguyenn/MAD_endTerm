@@ -69,17 +69,19 @@ class LicenseViewController: UIViewController {
     
     
     // back to learn VC
-    @IBAction func backButtonTapped(_ sender: Any) {
-        let dest = storyboard?.instantiateViewController(identifier: "LearnViewController") as! LearnViewController
-        // back trasistion (from top to bottom)
-        let transition = CATransition()
-        transition.duration = 0.3
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromBottom
-        view.window!.layer.add(transition, forKey: kCATransition)
-        dest.modalPresentationStyle = .fullScreen
-        self.present(dest, animated: false, completion: nil)
-    }
+//    @IBAction func backButtonTapped(_ sender: Any) {
+////        let dest = storyboard?.instantiateViewController(identifier: "LearnViewController") as! LearnViewController
+////        // back trasistion (from top to bottom)
+////        let transition = CATransition()
+////        transition.duration = 0.3
+////        transition.type = CATransitionType.push
+////        transition.subtype = CATransitionSubtype.fromBottom
+////        view.window!.layer.add(transition, forKey: kCATransition)
+////        dest.modalPresentationStyle = .fullScreen
+////        self.present(dest, animated: false, completion: nil)
+//       
+//        
+//    }
     
 }
 
@@ -125,3 +127,5 @@ extension LicenseViewController : UICollectionViewDelegate, UICollectionViewData
     
     
 }
+
+
