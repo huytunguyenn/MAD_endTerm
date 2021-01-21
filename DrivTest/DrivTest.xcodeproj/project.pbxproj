@@ -43,6 +43,7 @@
 		A41B005225B8C30E005FD1EC /* ListQuestionFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B005125B8C30E005FD1EC /* ListQuestionFinalViewController.swift */; };
 		A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257B925B8240900E2F25C /* ExamModel.swift */; };
 		A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257BB25B840B500E2F25C /* ExamBankModel.swift */; };
+		AB1B4B2625B9B652001DAF98 /* SignInSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */; };
 		ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +88,7 @@
 		A41B005125B8C30E005FD1EC /* ListQuestionFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListQuestionFinalViewController.swift; path = DrivTest/Models/ListQuestionFinalViewController.swift; sourceTree = SOURCE_ROOT; };
 		A4A257B925B8240900E2F25C /* ExamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamModel.swift; sourceTree = "<group>"; };
 		A4A257BB25B840B500E2F25C /* ExamBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamBankModel.swift; sourceTree = "<group>"; };
+		AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSuccessViewController.swift; sourceTree = "<group>"; };
 		ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 			children = (
 				2DBF2854258A1918009F26EE /* SignUpViewController.swift */,
 				2D7E0E7A2588A8D300A92ABD /* SignInViewController.swift */,
+				AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				2D0BC594258837A3000E5504 /* SceneDelegate.swift in Sources */,
 				A417FB0625B6AC490007B4E9 /* QuestionTableViewCell.swift in Sources */,
 				ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */,
+				AB1B4B2625B9B652001DAF98 /* SignInSuccessViewController.swift in Sources */,
 				A41B005225B8C30E005FD1EC /* ListQuestionFinalViewController.swift in Sources */,
 				A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */,
 				A417FB0425B6AC170007B4E9 /* ExamCollectionViewCell.swift in Sources */,
