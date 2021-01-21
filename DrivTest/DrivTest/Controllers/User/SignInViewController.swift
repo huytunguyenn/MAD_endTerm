@@ -8,6 +8,8 @@
 import RealmSwift
 import UIKit
 
+var curId = -1
+
 class person: Object{
     @objc dynamic var id: Int = -1
     @objc dynamic var username: String = ""
@@ -48,6 +50,7 @@ class SignInViewController: UIViewController {
         let people = realm.objects(person.self)
         for person in people{
             if(_username == person.username && _password == person.password){
+                curId = person.id
                 print("You have sign in")
                 
                 let vc = storyboard?.instantiateViewController(identifier: "SignInSuccessViewController") as! SignInSuccessViewController
