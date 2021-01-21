@@ -47,6 +47,7 @@
 		A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257BB25B840B500E2F25C /* ExamBankModel.swift */; };
 		AB1B4B2625B9B652001DAF98 /* SignInSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */; };
 		AB1B4B2825B9BDFD001DAF98 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1B4B2725B9BDFD001DAF98 /* StatisticViewController.swift */; };
+		AB1B4B2A25B9D0C9001DAF98 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1B4B2925B9D0C9001DAF98 /* ProfileViewController.swift */; };
 		ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		A4A257BB25B840B500E2F25C /* ExamBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamBankModel.swift; sourceTree = "<group>"; };
 		AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSuccessViewController.swift; sourceTree = "<group>"; };
 		AB1B4B2725B9BDFD001DAF98 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatisticViewController.swift; path = DrivTest/Controllers/User/StatisticViewController.swift; sourceTree = SOURCE_ROOT; };
+		AB1B4B2925B9D0C9001DAF98 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		ABFA2D5D25B717F200A41CC1 /* WatchingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 				2DBF2854258A1918009F26EE /* SignUpViewController.swift */,
 				2D7E0E7A2588A8D300A92ABD /* SignInViewController.swift */,
 				AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */,
+				AB1B4B2925B9D0C9001DAF98 /* ProfileViewController.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				A417FB0225B6ABF80007B4E9 /* ListQuestionViewController.swift in Sources */,
 				2D318B45258CFCFA0067EE4E /* LicenseViewController.swift in Sources */,
 				2DC04B0E25B6C3F10010424F /* Question.swift in Sources */,
+				AB1B4B2A25B9D0C9001DAF98 /* ProfileViewController.swift in Sources */,
 				2D0BC594258837A3000E5504 /* SceneDelegate.swift in Sources */,
 				A417FB0625B6AC490007B4E9 /* QuestionTableViewCell.swift in Sources */,
 				ABFA2D5E25B717F200A41CC1 /* WatchingViewController.swift in Sources */,
