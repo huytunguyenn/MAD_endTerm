@@ -10,9 +10,8 @@ import UIKit
 
 class ListExamViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 3
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = listExamView.dequeueReusableCell(withReuseIdentifier: "ExamCollectionViewCell", for: indexPath) as! ExamCollectionViewCell
         cell.layer.cornerRadius = 20

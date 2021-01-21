@@ -43,6 +43,9 @@
 		A417FB0425B6AC170007B4E9 /* ExamCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417FB0325B6AC170007B4E9 /* ExamCollectionViewCell.swift */; };
 		A417FB0625B6AC490007B4E9 /* QuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A417FB0525B6AC490007B4E9 /* QuestionTableViewCell.swift */; };
 		A41B005225B8C30E005FD1EC /* ListQuestionFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41B005125B8C30E005FD1EC /* ListQuestionFinalViewController.swift */; };
+		A41D696B25B9D99D00C386E7 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A41D696A25B9D99D00C386E7 /* AlertView.xib */; };
+		A41D696D25B9DF9F00C386E7 /* sadIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = A41D696C25B9DF9F00C386E7 /* sadIcon.png */; };
+		A41D696F25B9E0EA00C386E7 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41D696E25B9E0EA00C386E7 /* AlertViewController.swift */; };
 		A4A257BA25B8240900E2F25C /* ExamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257B925B8240900E2F25C /* ExamModel.swift */; };
 		A4A257BC25B840B500E2F25C /* ExamBankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A257BB25B840B500E2F25C /* ExamBankModel.swift */; };
 		AB1B4B2625B9B652001DAF98 /* SignInSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */; };
@@ -92,6 +95,9 @@
 		A417FB0325B6AC170007B4E9 /* ExamCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExamCollectionViewCell.swift; path = DrivTest/Controllers/ExamCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A417FB0525B6AC490007B4E9 /* QuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuestionTableViewCell.swift; path = DrivTest/Controllers/QuestionTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		A41B005125B8C30E005FD1EC /* ListQuestionFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ListQuestionFinalViewController.swift; path = DrivTest/Models/ListQuestionFinalViewController.swift; sourceTree = SOURCE_ROOT; };
+		A41D696A25B9D99D00C386E7 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		A41D696C25B9DF9F00C386E7 /* sadIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sadIcon.png; sourceTree = "<group>"; };
+		A41D696E25B9E0EA00C386E7 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AlertViewController.swift; path = DrivTest/View/AlertViewController.swift; sourceTree = SOURCE_ROOT; };
 		A4A257B925B8240900E2F25C /* ExamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamModel.swift; sourceTree = "<group>"; };
 		A4A257BB25B840B500E2F25C /* ExamBankModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamBankModel.swift; sourceTree = "<group>"; };
 		AB1B4B2525B9B652001DAF98 /* SignInSuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSuccessViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +145,7 @@
 				2D0BC591258837A3000E5504 /* AppDelegate.swift */,
 				2D0BC593258837A3000E5504 /* SceneDelegate.swift */,
 				2D0BC59A258837A9000E5504 /* Assets.xcassets */,
+				A41D696C25B9DF9F00C386E7 /* sadIcon.png */,
 				2D0BC59F258837A9000E5504 /* Info.plist */,
 			);
 			path = DrivTest;
@@ -182,6 +189,7 @@
 				A417FB0325B6AC170007B4E9 /* ExamCollectionViewCell.swift */,
 				A417FB0525B6AC490007B4E9 /* QuestionTableViewCell.swift */,
 				A41B005125B8C30E005FD1EC /* ListQuestionFinalViewController.swift */,
+				A41D696E25B9E0EA00C386E7 /* AlertViewController.swift */,
 			);
 			path = Exam;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 				2DE363BE25887F4400FCB8E5 /* User.storyboard */,
 				2DE363C52588916400FCB8E5 /* SignIn.storyboard */,
 				2DBF2852258A18BC009F26EE /* SignUp.storyboard */,
+				A41D696A25B9D99D00C386E7 /* AlertView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +331,8 @@
 				2D0BC59B258837A9000E5504 /* Assets.xcassets in Resources */,
 				2DE363BF25887F4400FCB8E5 /* User.storyboard in Resources */,
 				2D0BC599258837A3000E5504 /* Main.storyboard in Resources */,
+				A41D696B25B9D99D00C386E7 /* AlertView.xib in Resources */,
+				A41D696D25B9DF9F00C386E7 /* sadIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +412,7 @@
 				2D7E0E7B2588A8D300A92ABD /* SignInViewController.swift in Sources */,
 				2D95450925B68177005B93B5 /* QuizViewController.swift in Sources */,
 				2D92653C258CB54D004C091F /* LearnViewController.swift in Sources */,
+				A41D696F25B9E0EA00C386E7 /* AlertViewController.swift in Sources */,
 				2D7E0E812588B62200A92ABD /* OnBoardingViewController.swift in Sources */,
 				2DD7DA6525B89C17008523EB /* ExitPopUpViewController.swift in Sources */,
 				2D318B43258CFB770067EE4E /* VideoViewController.swift in Sources */,
