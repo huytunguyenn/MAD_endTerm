@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NUU-bQ-n3s">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NUU-bQ-n3s">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -78,12 +78,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO2-P7-Qkc">
-                                <rect key="frame" x="25" y="802" width="44" height="35"/>
+                                <rect key="frame" x="25" y="802" width="71" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="R5Q-NF-aur"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Quay lại"/>
                                 <connections>
                                     <action selector="tapBack:" destination="NUU-bQ-n3s" eventType="touchUpInside" id="BF5-sK-ZqU"/>
                                 </connections>
@@ -164,7 +164,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Tiếp tục"/>
                                 <connections>
-                                    <segue destination="Tp5-Y3-sG4" kind="presentation" id="e32-5e-oJS"/>
+                                    <segue destination="Tp5-Y3-sG4" kind="presentation" modalPresentationStyle="fullScreen" id="e32-5e-oJS"/>
                                 </connections>
                             </button>
                         </subviews>

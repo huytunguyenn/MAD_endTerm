@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH6-jP-h1p">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YH6-jP-h1p">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -239,7 +239,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="Quay lại">
-                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="backButtonTapped:" destination="lHu-3V-945" eventType="touchUpInside" id="RAr-4U-fyG"/>
@@ -256,7 +256,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <state key="normal" title="OK">
-                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="okButtonTapped:" destination="lHu-3V-945" eventType="touchUpInside" id="dZ2-XN-2qE"/>
@@ -316,7 +316,7 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6e6-4t-tO7">
                                         <rect key="frame" x="0.0" y="173" width="107" height="15"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcM-0l-jfQ">
                                         <rect key="frame" x="41" y="90" width="27" height="27"/>
@@ -650,14 +650,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-UJ-nmK">
-                                <rect key="frame" x="20" y="745" width="91" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                                <connections>
-                                    <action selector="backButtonTapped:" destination="aWt-MX-hnH" eventType="touchUpInside" id="3tR-uk-oX8"/>
-                                </connections>
-                            </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="pK8-yC-sc8">
                                 <rect key="frame" x="20" y="64" width="362" height="180"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -692,11 +684,24 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-UJ-nmK">
+                                <rect key="frame" x="36" y="776" width="91" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="1DS-gC-Awv"/>
+                                    <constraint firstAttribute="height" constant="47" id="TkE-Tn-CiH"/>
+                                </constraints>
+                                <state key="normal" title="Quay lại"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="aWt-MX-hnH" eventType="touchUpInside" id="3tR-uk-oX8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="O3b-UJ-nmK" firstAttribute="leading" secondItem="R0P-aG-MGh" secondAttribute="leading" constant="36" id="Hfp-2R-hNA"/>
                             <constraint firstItem="pK8-yC-sc8" firstAttribute="top" secondItem="R0P-aG-MGh" secondAttribute="top" constant="20" id="LnX-Np-xax"/>
                             <constraint firstItem="pK8-yC-sc8" firstAttribute="leading" secondItem="R0P-aG-MGh" secondAttribute="leading" constant="20" id="WkM-gz-K06"/>
+                            <constraint firstItem="R0P-aG-MGh" firstAttribute="bottom" secondItem="O3b-UJ-nmK" secondAttribute="bottom" constant="39" id="dUq-Zv-IKs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="R0P-aG-MGh"/>
                     </view>
@@ -724,10 +729,13 @@
                                     <constraint firstAttribute="height" constant="300" id="7jK-a3-w99"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-5i-PHC">
-                                <rect key="frame" x="0.0" y="779" width="86" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbl-5i-PHC">
+                                <rect key="frame" x="32" y="776" width="86" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="3Qi-6G-His"/>
+                                    <constraint firstAttribute="width" constant="86" id="Mzq-N7-cb5"/>
+                                </constraints>
+                                <state key="normal" title="Quay lại"/>
                                 <connections>
                                     <action selector="didTapBackButton:" destination="MSq-En-Hbx" eventType="touchUpInside" id="Ie0-8L-onl"/>
                                 </connections>
@@ -737,7 +745,9 @@
                         <constraints>
                             <constraint firstItem="vEn-2G-hrt" firstAttribute="trailing" secondItem="csW-HO-3UJ" secondAttribute="trailing" id="J4q-kT-4HV"/>
                             <constraint firstItem="csW-HO-3UJ" firstAttribute="leading" secondItem="vEn-2G-hrt" secondAttribute="leading" id="WRc-MW-jps"/>
+                            <constraint firstItem="Rbl-5i-PHC" firstAttribute="leading" secondItem="vEn-2G-hrt" secondAttribute="leading" constant="32" id="fQ4-ir-pIv"/>
                             <constraint firstItem="csW-HO-3UJ" firstAttribute="top" secondItem="vEn-2G-hrt" secondAttribute="top" id="tPs-YP-pJ3"/>
+                            <constraint firstItem="vEn-2G-hrt" firstAttribute="bottom" secondItem="Rbl-5i-PHC" secondAttribute="bottom" constant="26" id="wq3-Zj-gbx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vEn-2G-hrt"/>
                     </view>
