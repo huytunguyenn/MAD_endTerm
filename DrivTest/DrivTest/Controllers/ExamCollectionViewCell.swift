@@ -17,7 +17,7 @@ class ExamCollectionViewCell: UICollectionViewCell {
     
     @IBAction func startBtn_Click(_ sender: Any) {
         let sb = UIStoryboard(name: "Exam", bundle: nil)
-        let screen = sb.instantiateViewController(identifier: "ListQuestionViewController") as ListQuestionViewController
+        let screen = sb.instantiateViewController(identifier: "ListQuestionFinalViewController") as ListQuestionFinalViewController
         screen.numTest = self.numTest
         
         parentViewController?.navigationController?.pushViewController(screen, animated: true)
