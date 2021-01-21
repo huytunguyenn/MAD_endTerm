@@ -43,6 +43,7 @@ class ExamA1{
             else if (num.subType == 1){
                 let tempQ = list_question_khainiem[num.number]
                 temp.textQ = tempQ
+                print(tempQ.optionA)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
 
@@ -57,6 +58,7 @@ class ExamA1{
             else if (num.subType == 3){
                 let tempQ = list_question_giaoduc[num.number]
                 temp.textQ = tempQ
+                print(tempQ.optionA)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
 

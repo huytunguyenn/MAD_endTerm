@@ -24,6 +24,7 @@ class ListQuestionFinalViewController: UIViewController {
     @IBOutlet var finish_Btn: UIButton!
     
     
+    
     //---data
     var numTest: Int = 0
        //var exam = ExamA1(listNumericalQuestion: [(subType: 0, number: 0), (subType: 0, number: 1)], num_Exem: 1) // chuoi cau hoi
@@ -35,6 +36,23 @@ class ListQuestionFinalViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    func loadUI(){
+        numericQuestionTxt.text = "Câu 1/" + String(exam.amountQuestion)
+        questionTxt.text = exam.listQuestion[0].question
+        if (exam.listQuestion[0].isImage == true){
+            imageQView.heightAnchor.constraint(equalToConstant: CGFloat(150)).isActive = true
+        }
+        else{
+            imageQView.heightAnchor.constraint(equalToConstant: CGFloat(150)).isActive = true
+        }
+        
+        A_Btn.titleLabel?.text = exam.listQuestion[0].textQ?.optionA
+        
+         B_Btn.titleLabel?.text = exam.listQuestion[0].textQ?.optionB
+         C_Btn.titleLabel?.text = exam.listQuestion[0].textQ?.optionC
+         D_Btn.titleLabel?.text = exam.listQuestion[0].textQ?.optionD
     }
     
 

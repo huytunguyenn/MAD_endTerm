@@ -95,12 +95,6 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
             cell.layer.backgroundColor = UIColor.orange.cgColor
         }
         
-        if (exam.listQuestion[presentQuestion].selected == -1){
-            cell.layer.backgroundColor = UIColor.white.cgColor
-        }
-        else if(exam.listQuestion[presentQuestion].selected == indexPath.row){
-            cell.layer.backgroundColor = UIColor.orange.cgColor
-        }
         
         cell.parentDelegate = self
         
@@ -145,7 +139,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                          cell.layer.backgroundColor = UIColor.white.cgColor
                     }
                 }else{
-                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                    if (count == exam.listQuestion[presentQuestion].correctAswer - 1){
                         
                         cell.backgroundColor = UIColor.green
                     }
@@ -161,7 +155,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                         
                     }
                 }
-                if (isfinshed == false){
+               /* if (isfinshed == false){
                     if (exam.listQuestion[presentQuestion].selected == -1){
                         cell.layer.backgroundColor = UIColor.white.cgColor
                     }
@@ -171,7 +165,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                          cell.layer.backgroundColor = UIColor.white.cgColor
                     }
                 }else{
-                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                    if (count == exam.listQuestion[presentQuestion].correctAswer - 1){
                         
                         cell.backgroundColor = UIColor.green
                     }
@@ -186,7 +180,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                         }
                         
                     }
-                }
+                }*/
             }
         }
         
@@ -217,7 +211,6 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                 else if (indexPath.row == 3){
                     cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
                 }
-                
 
                 if (isfinshed == false){
                     if (exam.listQuestion[presentQuestion].selected == -1){
@@ -229,7 +222,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                          cell.layer.backgroundColor = UIColor.white.cgColor
                     }
                 }else{
-                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                    if (count == exam.listQuestion[presentQuestion].correctAswer - 1){
                         
                         cell.backgroundColor = UIColor.green
                     }
@@ -253,8 +246,9 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     }
     
     @IBAction func difficultBtn_Click(_ sender: Any) {
-        print(exam.listQuestion[1].textQ?.optionA)
-
+        for temp in self.exam.listQuestion{
+            print(temp.textQ)
+        }
     }
     
     @IBAction func finishBtn_Click(_ sender: Any) {
@@ -264,7 +258,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                 let indexPath = IndexPath(row: count, section: 0)
                 do {
                     let cell = try listAnserView.cellForRow(at: indexPath) as! QuestionTableViewCell
-                    if (count == exam.listQuestion[presentQuestion].correctAswer){
+                    if (count == exam.listQuestion[presentQuestion].correctAswer - 1){
                                       
                                       cell.backgroundColor = UIColor.green
                                   }
@@ -343,8 +337,11 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
                     else if (answer == 3){
                         cell.answerTxt.text = exam.listQuestion[presentQuestion].textQ?.optionD
                     }
+                    self.listAnserView.reloadData()
+
                 }
-               self.listAnserView.reloadData()
+
+               
 
            }
            else{
