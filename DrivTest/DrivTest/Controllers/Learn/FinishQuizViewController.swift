@@ -29,34 +29,36 @@ class FinishQuizViewController: UIViewController {
         
         // show license type
         if (type == 0){
-            typeLabel.text = "A1"
+            typeLabel.text = "Loại bằng A1."
         }else if(type==1){
-            typeLabel.text = "A2"
+            typeLabel.text = "Loại bằng A2."
         }else if(type==2){
-            typeLabel.text = "B1"
+            typeLabel.text = "Loại bằng B1."
         }else if(type==3){
-            typeLabel.text = "B2"
+            typeLabel.text = "Loại bằng B2."
         }else if(type==4){
-            typeLabel.text = "C"
+            typeLabel.text = "Loại bằng C."
         }else{
-            typeLabel.text = "F"
+            typeLabel.text = "Loại bằng F."
         }
         // show question type
         if (subtype == 0){
-            subTypeLabel.text = "Câu Hỏi Điểm Liệt"
+            subTypeLabel.text = "Câu Hỏi Điểm Liệt,"
         }else if(subtype==1){
-            subTypeLabel.text = "Khái Niệm & Quy Tắc"
+            subTypeLabel.text = "Khái Niệm & Quy Tắc,"
         }else if(subtype==2){
-            subTypeLabel.text = "Hệ Thống Biển Báo"
+            subTypeLabel.text = "Hệ Thống Biển Báo,"
         }else if(subtype==3){
-            subTypeLabel.text = "Văn Hoá & Đạo Đức"
+            subTypeLabel.text = "Văn Hoá & Đạo Đức,"
         }else{
-            subTypeLabel.text = "Câu Hỏi Sa Hình"
+            subTypeLabel.text = "Câu Hỏi Sa Hình,"
         }
         // show score & total quest
         scoreLabel.text = String(score)
         totalQuestionsLabel.text = String(totalQuestions)
-        
+        // border button
+        backButton.layer.cornerRadius = 15
+        redoButton.layer.cornerRadius = 15
         
     }
     
