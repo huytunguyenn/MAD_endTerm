@@ -35,7 +35,7 @@ class ExamA1{
             if (num.subType == 0 ){
                 temp.isParalysis =  true
                 let tempQ = list_question_diemliet[num.number]
-                print(tempQ.optionA)
+                print(num.number)
                 temp.textQ = tempQ
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
@@ -43,7 +43,7 @@ class ExamA1{
             else if (num.subType == 1){
                 let tempQ = list_question_khainiem[num.number]
                 temp.textQ = tempQ
-                print(tempQ.optionA)
+                print(num.number)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
 
@@ -58,7 +58,7 @@ class ExamA1{
             else if (num.subType == 3){
                 let tempQ = list_question_giaoduc[num.number]
                 temp.textQ = tempQ
-                print(tempQ.optionA)
+                print(num.number)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
 
