@@ -28,27 +28,36 @@ class ListQuestionFinalViewController: UIViewController {
     
     @IBOutlet var paralysTxt: UILabel!
     
+    @IBOutlet var timeTxt: UILabel!
     
     
     //---data
     var numTest: Int = 0
+    var typeTest: Int = 0
     //var exam = ExamA1(listNumericalQuestion: [(subType: 0, number: 0), (subType: 0, number: 1)], num_Exem: 1) // chuoi cau hoi
-    let exam = Bank_ExamA1().listExam[0]
+    var exam = ExamA1()
     var presentQuestion: Int = 0 //cau hoi hien tai
     var isfinshed: Bool = false
     
     var isPassed = false
     var amountCorrect = 0
+    var time: Int = 0
+    
+    var timerControl: Timer? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        exam = Bank_ExamA1(typeExam: self.typeTest).getExam(numberExam: self.numTest)
         
         loadUI()
+        
+        createTimer(second: exam.time)
         
         // Do any additional setup after loading the view.
     }
     
     func loadUI(){
+        timeTxt.text = String(time/60) + ":" + String(time%60)
         checkTxt.isHidden = true
         paralysTxt.isHidden = true
         numericQuestionTxt.text = "Câu 1/" + String(exam.amountQuestion)
@@ -72,6 +81,8 @@ class ListQuestionFinalViewController: UIViewController {
         CustomizeButton(button: D_Btn)
         
         finish_Btn.layer.cornerRadius = 15
+        
+        time = exam.time
         
     }
     
@@ -128,6 +139,7 @@ class ListQuestionFinalViewController: UIViewController {
             
             
             if (isfinshed == true){
+                checkTxt.isHidden = false
                 if (exam.listQuestion[presentQuestion].correctAswer == 1){
                     A_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
                 } else if (exam.listQuestion[presentQuestion].correctAswer == 2){
@@ -209,6 +221,7 @@ class ListQuestionFinalViewController: UIViewController {
             D_Btn.backgroundColor = UIColor.white
             
             if (isfinshed == true){
+                checkTxt.isHidden = false
                 if (exam.listQuestion[presentQuestion].correctAswer == 1){
                     A_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
                 } else if (exam.listQuestion[presentQuestion].correctAswer == 2){
@@ -315,7 +328,8 @@ class ListQuestionFinalViewController: UIViewController {
     }
     
     @IBAction func finish_Click(_ sender: Any) {
-        
+        timerControl?.invalidate()
+        timerControl = nil
         checkResult()
         if (isPassed == true){
             AlertView.instance.showAlert(typeAlert: "pass", correctAnswer: amountCorrect)
@@ -357,6 +371,7 @@ class ListQuestionFinalViewController: UIViewController {
                 }
             }
             else{
+                checkTxt.isHidden = false
                 checkTxt.text = "Đúng!"
             }
         }
@@ -389,10 +404,61 @@ class ListQuestionFinalViewController: UIViewController {
         if (fail == true){
             isPassed = false
         }else{
-            if (amountCorrect >= 12){
+            if (amountCorrect < Int(Float (exam.amountQuestion) * 0.8)){
                 isPassed = false
             }else{
                 isPassed = true
+            }
+        }
+    }
+    
+    func createTimer(second: Int){
+        timerControl = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(fireTime), userInfo: nil, repeats: true)
+    }
+    
+    @objc func fireTime(){
+        time = time - 1
+        
+        timeTxt.text = String(time/60) + ":" + String(time%60)
+        
+        if (time == 0){
+            isfinshed = true
+            timerControl?.invalidate()
+            timerControl = nil
+            checkResult()
+            checkTxt.isHidden = false
+            if(exam.listQuestion[presentQuestion].selected != exam.listQuestion[presentQuestion].correctAswer){
+                checkTxt.backgroundColor = UIColor(red: 247/255, green: 57/255, blue: 61/255, alpha: 0.35)
+                checkTxt.text = "Sai!"
+                if (exam.listQuestion[presentQuestion].selected == 1){
+                    A_Btn.backgroundColor = UIColor(red: 247/255, green: 57/255, blue: 61/255, alpha: 0.35)
+                } else if (exam.listQuestion[presentQuestion].selected == 2){
+                    B_Btn.backgroundColor = UIColor(red: 247/255, green: 57/255, blue: 61/255, alpha: 0.35)
+                }else if (exam.listQuestion[presentQuestion].selected == 3){
+                    C_Btn.backgroundColor = UIColor(red: 247/255, green: 57/255, blue: 61/255, alpha: 0.35)
+                }else if (exam.listQuestion[presentQuestion].selected == 4){
+                    D_Btn.backgroundColor = UIColor(red: 247/255, green: 57/255, blue: 61/255, alpha: 0.35)
+                }
+            }
+            else{
+                checkTxt.isHidden = false
+                checkTxt.text = "Đúng!"
+            }
+            
+            if (exam.listQuestion[presentQuestion].correctAswer == 1){
+                       A_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
+                   } else if (exam.listQuestion[presentQuestion].correctAswer == 2){
+                       B_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
+                   }else if (exam.listQuestion[presentQuestion].correctAswer == 3){
+                       C_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
+                   }else if (exam.listQuestion[presentQuestion].correctAswer == 4){
+                       D_Btn.backgroundColor = UIColor(red: 48/255, green: 219/255, blue: 17/255, alpha: 0.35)
+                   }
+                   
+            if (isPassed == true){
+                AlertView.instance.showAlert(typeAlert: "pass", correctAnswer: amountCorrect)
+            }else{
+                AlertView.instance.showAlert(typeAlert: "fail", correctAnswer: amountCorrect)
             }
         }
     }

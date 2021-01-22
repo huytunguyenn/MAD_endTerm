@@ -32,7 +32,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
     
     var numTest: Int = 0
     //var exam = ExamA1(listNumericalQuestion: [(subType: 0, number: 0), (subType: 0, number: 1)], num_Exem: 1) // chuoi cau hoi
-    var exam = Bank_ExamA1().listExam[0]
+    var exam = Bank_ExamA1(typeExam: 0).getExam(numberExam: 0)
     var presentQuestion: Int = 0 //cau hoi hien tai
     var isfinshed: Bool = false
     
@@ -62,7 +62,7 @@ class ListQuestionViewController: UIViewController, UITableViewDataSource, UITab
         questionTxt.text = exam.listQuestion[0].question
         print (exam.amountQuestion)
         
-        var templable = "Câu 1/" + String(exam.amountQuestion)
+        let templable = "Câu 1/" + String(exam.amountQuestion)
         numericQuestionTxt.text = templable
 
         // Do any additional setup after loading the view.
