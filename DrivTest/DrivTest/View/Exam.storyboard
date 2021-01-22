@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IBd-xt-0ur">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IBd-xt-0ur">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EkZ-qL-ypj" firstAttribute="height" secondItem="nCS-9S-IGm" secondAttribute="height" multiplier="0.15" id="0Hh-Lp-8AE"/>
                             <constraint firstItem="OTd-t5-697" firstAttribute="centerX" secondItem="nCS-9S-IGm" secondAttribute="centerX" id="11h-cO-qxK"/>
@@ -100,7 +100,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xcr-XH-lhw">
                                 <rect key="frame" x="0.0" y="54" width="414" height="739"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ef0-gg-nJY">
                                     <size key="itemSize" width="144" height="156"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -118,7 +118,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Đề 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsA-IO-gNT">
                                                     <rect key="frame" x="55" y="15" width="34.333333333333343" height="22"/>
                                                     <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
-                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="textColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Số Câu:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfj-Ia-HoI">
@@ -151,7 +151,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnE-va-QxD">
-                                                    <rect key="frame" x="99" y="22.666666666666664" width="25" height="10.333333333333336"/>
+                                                    <rect key="frame" x="99" y="22.666666666666664" width="25" height="10"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="ZX4-ol-etv"/>
                                                         <constraint firstAttribute="width" constant="25" id="gSQ-Xq-fMA"/>
@@ -194,7 +194,7 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="gIK-w8-AWv" firstAttribute="bottom" secondItem="xcr-XH-lhw" secondAttribute="bottom" constant="20" id="LOt-MP-jvr"/>
                             <constraint firstItem="xcr-XH-lhw" firstAttribute="top" secondItem="gIK-w8-AWv" secondAttribute="top" constant="10" id="kmS-8z-gt9"/>
@@ -231,7 +231,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vt8-1P-nfj">
-                                <rect key="frame" x="40" y="56.666666666666657" width="30" height="25.333333333333336"/>
+                                <rect key="frame" x="40" y="56.666666666666657" width="30" height="25.000000000000007"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="SGc-Ss-5AS"/>
                                     <constraint firstAttribute="height" constant="30" id="pRb-jS-x0O"/>
@@ -243,19 +243,19 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R50-bp-D7c">
-                                <rect key="frame" x="261" y="54" width="30" height="30"/>
+                                <rect key="frame" x="261" y="54.333333333333314" width="30" height="29.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Hgj-cZ-h6F"/>
                                     <constraint firstAttribute="height" constant="30" id="aNH-Gc-6TP"/>
                                 </constraints>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="star.fill" catalog="system"/>
                                 <connections>
                                     <action selector="difficultBtn_Click:" destination="aqY-Tc-Hsz" eventType="touchUpInside" id="FJY-H3-AD0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Vn-ld-AoB">
-                                <rect key="frame" x="344" y="56.666666666666657" width="30" height="25.333333333333336"/>
+                                <rect key="frame" x="344" y="56.666666666666657" width="30" height="25.000000000000007"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="CAt-Yy-h3Q"/>
                                     <constraint firstAttribute="width" constant="30" id="quz-HT-Nbd"/>
@@ -393,7 +393,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhM-1x-kUJ">
-                                <rect key="frame" x="40" y="56.666666666666657" width="35" height="25.333333333333336"/>
+                                <rect key="frame" x="40" y="56.666666666666657" width="35" height="25.000000000000007"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="1kt-Qm-Sk7"/>
                                     <constraint firstAttribute="width" constant="35" id="7Kc-Gf-bQ6"/>
@@ -443,7 +443,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-dm-C8o">
-                                <rect key="frame" x="349" y="56.666666666666657" width="30" height="25.333333333333336"/>
+                                <rect key="frame" x="349" y="56.666666666666657" width="30" height="25.000000000000007"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="S03-gv-2Hg"/>
                                     <constraint firstAttribute="height" constant="30" id="eW6-YR-gkB"/>
@@ -539,7 +539,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Câu Liệt!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVk-Fi-xYA">
                                 <rect key="frame" x="238.00000000000003" y="54" width="78.333333333333343" height="30"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="x1k-id-G1c"/>
                                 </constraints>
@@ -616,10 +616,10 @@
     </scenes>
     <resources>
         <image name="Hocbai" width="1121" height="663"/>
-        <image name="arrowtriangle.left.fill" catalog="system" width="64" height="58"/>
-        <image name="arrowtriangle.right.fill" catalog="system" width="64" height="58"/>
+        <image name="arrowtriangle.left.fill" catalog="system" width="64" height="56"/>
+        <image name="arrowtriangle.right.fill" catalog="system" width="64" height="56"/>
         <image name="chonloaibang" width="500" height="150"/>
-        <image name="ellipsis" catalog="system" width="64" height="20"/>
+        <image name="ellipsis" catalog="system" width="64" height="18"/>
         <image name="quiz-24" width="32" height="32"/>
         <image name="star.fill" catalog="system" width="64" height="58"/>
     </resources>

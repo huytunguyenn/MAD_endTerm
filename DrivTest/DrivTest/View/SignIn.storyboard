@@ -162,7 +162,9 @@
                                     <constraint firstAttribute="height" constant="35" id="CTq-dc-jE9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Tiếp tục"/>
+                                <state key="normal" title="Tiếp tục">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="Tp5-Y3-sG4" kind="presentation" modalPresentationStyle="fullScreen" id="e32-5e-oJS"/>
                                 </connections>

@@ -91,7 +91,9 @@
                                     <constraint firstAttribute="height" constant="35" id="Ahn-4B-sbi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Đăng ký"/>
+                                <state key="normal" title="Đăng ký">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="tapSignUp:" destination="KCC-JL-GaY" eventType="touchUpInside" id="vCd-cE-nvZ"/>
                                 </connections>
@@ -102,7 +104,9 @@
                                     <constraint firstAttribute="height" constant="35" id="WdF-88-tax"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Quay lại"/>
+                                <state key="normal" title="Quay lại">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="tapBack:" destination="KCC-JL-GaY" eventType="touchUpInside" id="9gb-To-zds"/>
                                 </connections>

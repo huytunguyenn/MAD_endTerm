@@ -16,12 +16,12 @@ class VideoViewController: UIViewController {
    
     // images for collection view
     var listCatData = [
-        catData(_imageName: "pic_a1"),
-        catData(_imageName: "pic_a2"),
-        catData(_imageName: "pic_b1"),
-        catData(_imageName: "pic_b2"),
-        catData(_imageName: "pic_c"),
-        catData(_imageName: "pic_f")
+        catData(_imageName: "pic_a1_h"),
+        catData(_imageName: "pic_a2_h"),
+        catData(_imageName: "pic_b1_h"),
+        catData(_imageName: "pic_b2_h"),
+        catData(_imageName: "pic_c_h"),
+        catData(_imageName: "pic_f_h")
     ]
     // layout for collection view
     var layout = UICollectionViewLayout()
@@ -34,9 +34,9 @@ class VideoViewController: UIViewController {
         catagoryCollectionView.dataSource = self
         catagoryCollectionView.delegate = self
         if let layout = catagoryCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-            layout.scrollDirection = .horizontal
+            layout.scrollDirection = .vertical
         }
-        catagoryCollectionView.showsHorizontalScrollIndicator = false
+        catagoryCollectionView.showsVerticalScrollIndicator = false
     }
     
 
@@ -77,7 +77,8 @@ extension VideoViewController : UICollectionViewDelegate, UICollectionViewDataSo
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.height)
+        //return CGSize(width: collectionView.frame.width/2.5, height: collectionView.frame.height)
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height/3)
     }
     
     
