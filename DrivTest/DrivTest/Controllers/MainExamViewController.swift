@@ -30,7 +30,7 @@ class MainExamViewController: UIViewController {
         
         let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
         
-        screen.typeExam = 1
+        screen.typeExam = 0
         
         self.navigationController?.pushViewController(screen, animated: true)
     }
@@ -41,7 +41,7 @@ class MainExamViewController: UIViewController {
         
         let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
         
-        screen.typeExam = 2
+        screen.typeExam = 1
         
         self.navigationController?.pushViewController(screen, animated: true)
     }
@@ -51,7 +51,7 @@ class MainExamViewController: UIViewController {
         
         let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
         
-        screen.typeExam = 3
+        screen.typeExam = 2
         
         self.navigationController?.pushViewController(screen, animated: true)
     }
@@ -61,7 +61,7 @@ class MainExamViewController: UIViewController {
         
         let screen = sb.instantiateViewController(identifier: "ListExamViewController") as! ListExamViewController
         
-        screen.typeExam = 4
+        screen.typeExam = 3
         
         self.navigationController?.pushViewController(screen, animated: true)
     }

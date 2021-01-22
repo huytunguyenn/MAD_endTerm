@@ -16,26 +16,28 @@ struct ExamQuestion{
     var selected: Int = -1
     var correctAswer: Int = -2
     var question: String = ""
+    var amountQ: Int = 0
     
 }
 
 
 class ExamA1{
+    let time: Int = 600
     var numExam: Int = 0
     var amountQuestion: Int = 0
     var listQuestion = [ExamQuestion]()
-    init (listNumericalQuestion: [(subType: Int, number: Int)], num_Exem: Int){
-        let list_question_diemliet = QuestionBank(type: 0,subtype: 0).list
-        let list_question_khainiem = QuestionBank(type: 0, subtype: 1).list
-        let list_question_bienbao = QuestionBank(type: 0, subtype: 2).list
-        let list_question_giaoduc = QuestionBank(type: 0, subtype: 3).list
-        let list_question_sahinh = QuestionBank(type: 0, subtype: 4).list
+    init (listNumericalQuestion: [(subType: Int, number: Int)], typeExam: Int){
+        let list_question_diemliet = QuestionBank(type: typeExam,subtype: 0).list
+        let list_question_khainiem = QuestionBank(type: typeExam, subtype: 1).list
+      //  let list_question_bienbao = QuestionBank(type: typeExam, subtype: 2).list
+        let list_question_giaoduc = QuestionBank(type: typeExam, subtype: 3).list
+     //   let list_question_sahinh = QuestionBank(type: typeExam, subtype: 4).list
         for num in listNumericalQuestion{
             var temp = ExamQuestion()
             if (num.subType == 0 ){
                 temp.isParalysis =  true
                 let tempQ = list_question_diemliet[num.number]
-                print(num.number)
+                //  print(num.number)
                 temp.textQ = tempQ
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
@@ -43,37 +45,40 @@ class ExamA1{
             else if (num.subType == 1){
                 let tempQ = list_question_khainiem[num.number]
                 temp.textQ = tempQ
-                print(num.number)
+                //   print(num.number)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
-
+                
                 
             }
             else if (num.subType == 2){
                 temp.isImage = true
-             //   let tempQ = list_question_bienbao[num.number]
+                //   let tempQ = list_question_bienbao[num.number]
                 //temp.imageQ = tempQ
                 
             }
             else if (num.subType == 3){
                 let tempQ = list_question_giaoduc[num.number]
                 temp.textQ = tempQ
-                print(num.number)
+                // print(num.number)
                 temp.correctAswer = tempQ.correctAnswer
                 temp.question = tempQ.question
-
+                
             }
             else if (num.subType == 4){
                 temp.isImage = true
                 // let tempQ = list_question_sahinh[num.number]
-                 //temp.imageQ = tempQ
+                //temp.imageQ = tempQ
             }
             if (num.subType != 2 && num.subType != 4){
                 listQuestion.append(temp)
             }
         }
         amountQuestion = listQuestion.count
-        numExam = num_Exem
+        numExam = typeExam
+    }
+    init(){
+        
     }
     
     

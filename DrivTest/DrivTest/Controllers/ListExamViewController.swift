@@ -10,15 +10,17 @@ import UIKit
 
 class ListExamViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return amountExam
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = listExamView.dequeueReusableCell(withReuseIdentifier: "ExamCollectionViewCell", for: indexPath) as! ExamCollectionViewCell
         cell.layer.cornerRadius = 20
         cell.layer.borderColor = UIColor.black.cgColor
         cell.layer.borderWidth = 2
-        cell.numTest = indexPath.row + 1
+        cell.numTest = indexPath.row
+        cell.type_Exam = self.typeExam
         
+        cell.numericTxt.text = "Đề " + String(indexPath.row + 1)
         cell.parentViewController = self
         return cell
         
@@ -27,11 +29,12 @@ class ListExamViewController: UIViewController, UICollectionViewDataSource, UICo
     
     
     var typeExam: Int = 0
-    
+    var amountExam: Int = 0
     @IBOutlet var listExamView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        amountExam = Bank_ExamA1(typeExam: typeExam).amount
         
         listExamView.dataSource = self
         listExamView.delegate = self
