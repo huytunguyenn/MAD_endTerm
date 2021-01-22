@@ -85,7 +85,7 @@
                                     <color key="titleColor" red="0.75697266320000001" green="0.1207412455" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="f9E-P1-uDX" kind="presentation" modalPresentationStyle="fullScreen" id="JdU-Fn-cLp"/>
+                                    <segue destination="pya-5H-Rm5" kind="presentation" modalPresentationStyle="fullScreen" id="KIT-Px-uVx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -153,6 +153,6 @@
         <image name="slogan" width="1132" height="451"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="67E-RV-Hgk"/>
+        <segue reference="KIT-Px-uVx"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -150,14 +150,6 @@
             </objects>
             <point key="canvasLocation" x="205.79710144927537" y="139.28571428571428"/>
         </scene>
-        <!--Tabbar-->
-        <scene sceneID="Lm0-8o-rEd">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Tabbar" id="5Un-Fi-65e" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="uCH-O1-aDE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="844" y="47"/>
-        </scene>
     </scenes>
     <resources>
         <image name="LOGO" width="762" height="612"/>
